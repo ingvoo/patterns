@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "afterRelease": "npm run deploy",
+    "afterBump": "npm run build"
+  },
+  "npm": {
+    "publish": false
+  },
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "preset": "angular",
+      "infile": "CHANGELOG.md"
+    }
+  }
+}
