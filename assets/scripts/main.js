@@ -1,14 +1,15 @@
-// This file is the webpack entry point
+/*----------------------------------------*\
+  MAIN
+  This file is the webpack entry point
+  Webpack will automatically look for files relative to `assets/scripts/` and `assets/`.
+\*----------------------------------------*/
 
-// Import the main Sass file
+// Stylesheet
 import 'scss/main.scss';
 
-// Here you can import your components, icons, etc.
-// For example:
-//
-// import modal from 'components/Modal';
-// import 'icons/home.svg';
-//
-// Webpack will automatically look for files relative to `assets/scripts/` and `assets/`.
+// Icons
+import 'icons/chevron-right.svg';
+import 'icons/chevron-left.svg';
 
-console.log('Main bundle loaded.');
+// Here you can import your components, icons, etc.
+// import modal from 'components/Modal';
