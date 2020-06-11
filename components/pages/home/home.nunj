@@ -13,7 +13,9 @@
       Nihil, neque ipsa! Maiores, molestias dicta. Ad, voluptatum assumenda
       perferendis facere, voluptatem odio laborum, repellat sint laudantium
       labore non cumque eaque tempore!</p>
-      <button class="btn mt-4">Button</button>
+      <button class="btn mt-4">
+        Button {% render '@icon', { id: 'chevron-right', class: 'ml-1' } %}
+      </button>
     </main>
   </div>
 
