@@ -1,0 +1,47 @@
+/* ----------------------------------------*\
+  MARGIN
+\*---------------------------------------- */
+
+@each $space-name, $space-value in $spaces {
+  .mt-#{$space-name} {
+    margin-top: $space-value;
+  }
+
+  .mb-#{$space-name} {
+    margin-bottom: $space-value;
+  }
+
+  .mr-#{$space-name} {
+    margin-right: $space-value;
+  }
+
+  .ml-#{$space-name} {
+    margin-left: $space-value;
+  }
+
+  .mx-#{$space-name} {
+    margin-left: $space-value;
+    margin-right: $space-value;
+  }
+
+  .my-#{$space-name} {
+    margin-top: $space-value;
+    margin-bottom: $space-value;
+  }
+}
+
+// TODO: Setup utilities for each breakpoint
+// TODO: Setup margin auto utility
+// @each $breakpoint-name, $breakpoint-value in $breakpoints {
+//   @include screen($breakpoint-name) {
+//     @each $space-name, $space-value in $spaces {
+//       .#{$breakpoint-name}:mt-#{$space-name} {
+//         margin-top: $space-value;
+//       }
+
+//       .#{$breakpoint-name}:mb-#{$space-name} {
+//         margin-top: $space-value;
+//       }
+//     }
+//   }
+// }
