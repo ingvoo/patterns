@@ -1,0 +1,5 @@
+<header class="site-header">
+  <div class="container">
+    <h1 class="site-header__title">{{ text }}</h1>
+  </div>
+</header>
