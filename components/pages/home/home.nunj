@@ -1,0 +1,18 @@
+<div class="site-wrapper">
+  {% render '@header' %}
+  <main class="container">
+    <h2>The quick brown fox jumps over the lazy dog</h2>
+    <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Nihil, neque ipsa! Maiores, molestias dicta. Ad, voluptatum assumenda
+      perferendis facere, voluptatem odio laborum, repellat sint laudantium
+      labore non cumque eaque tempore!</p>
+    <h3>The five boxing wizards jump quickly</h3>
+    <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Nihil, neque ipsa! Maiores, molestias dicta. Ad, voluptatum assumenda
+      perferendis facere, voluptatem odio laborum, repellat sint laudantium
+      labore non cumque eaque tempore!</p>
+    <button class="btn mt-4">Button</button>
+  </main>
+</div>
+
+{% render '@footer', { class: 'mt-8', text: 'Footer' } %}

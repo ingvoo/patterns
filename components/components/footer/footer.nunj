@@ -1,4 +1,4 @@
-<footer class="site-footer">
+<footer class="site-footer {% if class %} {{ class }}{% endif %}">
   <div class="container">
     {{ text }}
   </div>

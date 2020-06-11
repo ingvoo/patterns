@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Welcome to Patterns
 ---
 
-This is your index page. You can edit its contents at `docs/01-index.md`
+A starter for scss develpment. Still is in it's early stage. For now visit [GitHub](https://github.com/ingvijonasson/patterns) for more informations.
