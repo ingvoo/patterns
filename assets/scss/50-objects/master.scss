@@ -2,6 +2,12 @@
   SITE MASTER
 \*---------------------------------------- */
 
-.site-wrapper {
+.master {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.master__content {
   flex: 1 0 auto;
 }
