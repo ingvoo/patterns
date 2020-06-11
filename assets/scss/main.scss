@@ -1,8 +1,22 @@
-// This is the main stylesheet file
+/* ----------------------------------------*\
+  MAIN
+\*---------------------------------------- */
 
-body {
-  color: hotpink;
+// Settings
+@import "10-settings/settings";
 
-  // Include an icon from your sprite example:
-  // background-image: url('../icons/home.svg');
-}
+// Generic
+@import "30-generic/reset";
+@import "30-generic/box-sizing";
+
+// Elements
+@import "40-elements/base";
+@import "40-elements/elements";
+
+// Objects
+@import "50-objects/container";
+
+// Components
+@import "60-components/button";
+@import "60-components/site-footer";
+@import "60-components/site-header";

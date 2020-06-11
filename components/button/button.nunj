@@ -1,4 +1,4 @@
-<p>{{ text }}</p>
+<button class="btn">{{ text }}</button>
 
 {# Use the icon partial for easy inclusion #}
 {# {% render '@icon', { id: 'home', class: 'icon--small' } %} #}

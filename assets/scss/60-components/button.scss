@@ -1,0 +1,39 @@
+/* ----------------------------------------*\
+  BUTTON
+\*---------------------------------------- */
+
+.btn,
+%btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.75rem 1rem;
+  max-width: 100%;
+
+  text-decoration: none;
+  text-align: center;
+  color: $color-white;
+
+  border: 1px solid transparent;
+  vertical-align: middle;
+  background-color: $color-primary;
+  border-radius: $border-radius-md;
+  transition: background-color $transition-duration-250;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: lighten($color-primary, 2);
+  }
+}
+
+.btn-reset,
+%btn-reset {
+  padding: 0;
+  color: inherit;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
