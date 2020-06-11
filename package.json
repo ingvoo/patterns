@@ -1,6 +1,6 @@
 {
-  "name": "styleguide-starterkit",
-  "version": "0.5.0",
+  "name": "patterns",
+  "version": "0.0.1",
   "description": "A starterkit to create styleguides with Fractal and Webpack.",
   "keywords": [
     "styleguide",
@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/liip/styleguide-starterkit.git"
+    "url": "https://github.com/ingvijonasson/patterns.git"
   },
   "license": "MIT",
   "scripts": {
@@ -19,8 +19,7 @@
     "build": "NODE_ENV=production concurrently 'npm run build:fractal' 'npm run build:webpack'",
     "build:webpack": "NODE_ENV=production webpack",
     "build:fractal": "NODE_ENV=production fractal build",
-    "release": "release-it",
-    "deploy": "echo \"No deploy script specified, skipping…\" && exit 0"
+    "release": "release-it"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
@@ -50,6 +49,6 @@
     "webpack-dev-server": "^3.11.0"
   },
   "engines": {
-    "node": ">=6 <=10"
+    "node": ">=10 <=12"
   }
 }
