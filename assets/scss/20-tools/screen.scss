@@ -2,4 +2,12 @@
   SCREEN
 \*---------------------------------------- */
 
-// TODO: screen mixin for breakpoints
+@mixin screen($name) {
+  @if map-has-key($breakpoints, $name) {
+    @media (min-width: #{map-get($breakpoints, $name)}) {
+      @content;
+    }
+  } @else {
+    @error "There is no breakpoint called #{$name}";
+  }
+}
