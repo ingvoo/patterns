@@ -2,12 +2,19 @@
   BASE
 \*---------------------------------------- */
 
+html,
+body {
+  height: 100%;
+}
+
 html {
   font-family: sans-serif;
   font-size: 16px;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   background-color: $color-white;
   color: $color-black;
 }
