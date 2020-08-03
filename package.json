@@ -1,13 +1,10 @@
 {
   "name": "patterns",
   "version": "0.1.0",
-  "description": "A starterkit to create styleguides with Fractal and Webpack.",
+  "description": "A styleguides starterkit",
   "keywords": [
-    "styleguide",
-    "toolkit",
-    "boilerplate",
-    "starterkit",
-    "fractal"
+    "scss",
+    "styleguide"
   ],
   "repository": {
     "type": "git",
