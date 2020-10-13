@@ -6,7 +6,7 @@
 @import "10-settings/settings";
 
 // Tools
-@import "20-tools/screen";
+@import "20-tools/mixins";
 
 // Generic
 @import "30-generic/reset";
@@ -29,3 +29,4 @@
 // Utilities
 @import "70-utilities/margin";
 @import "70-utilities/text-align";
+@import "70-utilities/truncate";
