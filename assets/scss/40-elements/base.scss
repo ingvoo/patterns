@@ -8,14 +8,10 @@ body {
 }
 
 html {
-  font-family: sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.65;
-  color: $color-black;
+  font-family: $font-family;
+  font-size: $font-base;
+  font-weight: $font-regular;
+  line-height: $leading-normal;
+  color: $color-text;
   background-color: $color-white;
-}
-
-body {
-  height: 100%;
 }
