@@ -3,8 +3,7 @@
 \*---------------------------------------- */
 
 .site-footer {
-  flex-shrink: 0;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-top: 1px solid $color-black;
+  padding-top: size(4);
+  padding-bottom: size(4);
+  border-top: 1px solid $color-border;
 }

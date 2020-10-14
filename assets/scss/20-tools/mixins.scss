@@ -1,0 +1,55 @@
+/* ----------------------------------------*\
+  MIXINS
+\*---------------------------------------- */
+
+/**
+ * Screen
+ */
+@mixin screen($name) {
+  @if map-has-key($breakpoints, $name) {
+    @media (min-width: #{map-get($breakpoints, $name)}) {
+      @content;
+    }
+  } @else {
+    @error "There is no breakpoint called #{$name}";
+  }
+}
+
+/**
+ * Size
+ */
+@function size($num) {
+  @if type-of($num) == number {
+    @if map-has-key($spaces, $num) {
+      @return map-get($spaces, $num);
+    } @else {
+      @warn "#{$num} is not available";
+      @return 0;
+    }
+  } @else {
+    @warn "#{$num} is not a number";
+    @return 0;
+  }
+}
+
+/**
+ * Truncate
+ */
+@mixin truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/**
+ * Visually hidden
+ */
+@mixin visually-hidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}

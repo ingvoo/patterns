@@ -3,9 +3,9 @@
 \*---------------------------------------- */
 
 .container {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  max-width: 1240px;
+  padding-left: size(4);
+  padding-right: size(4);
+  max-width: $max-w-6xl;
   margin-left: auto;
   margin-right: auto;
 }

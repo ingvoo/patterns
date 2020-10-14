@@ -1,8 +1,8 @@
 /* ----------------------------------------*\
-  ICON
+  TRUNCATE
 \*---------------------------------------- */
 
-.icon {
-  width: size(5);
-  height: size(5);
+%truncate,
+.truncate {
+  @include truncate;
 }
