@@ -1,3 +1,10 @@
+# [0.3.0](https://github.com/ingvijonasson/patterns/compare/0.2.0...0.3.0) (2020-10-14)
+
+
+### Features
+
+* introduce embed object for embeding iframes ([af0699c](https://github.com/ingvijonasson/patterns/commit/af0699c31820e12733ef456058dacd390bb34b0a))
+
 # [0.2.0](https://github.com/ingvijonasson/patterns/compare/0.1.0...0.2.0) (2020-10-14)
 
 
