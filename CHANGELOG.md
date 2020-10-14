@@ -1,3 +1,11 @@
+# [0.2.0](https://github.com/ingvijonasson/patterns/compare/0.1.0...0.2.0) (2020-10-14)
+
+
+### Features
+
+* add size mixin ([8ad499b](https://github.com/ingvijonasson/patterns/commit/8ad499ba755d1d634b0024777232ea1f45284809))
+* add truncate mixin, placeholder and class ([4367628](https://github.com/ingvijonasson/patterns/commit/436762833d78d2a07643d41f6ea26a0093c2f74a))
+
 # 0.1.0 (2020-06-11)
 
 
