@@ -1,0 +1,63 @@
+/* ----------------------------------------*\
+  DISPLAY
+\*---------------------------------------- */
+
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include screen($breakpoint-name) {
+    .#{$breakpoint-name}\:hidden {
+      display: none;
+    }
+
+    .#{$breakpoint-name}\:block {
+      display: block;
+    }
+
+    .#{$breakpoint-name}\:flex {
+      display: flex;
+    }
+
+    .#{$breakpoint-name}\:grid {
+      display: grid;
+    }
+
+    .#{$breakpoint-name}\:inline {
+      display: inline;
+    }
+
+    .#{$breakpoint-name}\:inline-flex {
+      display: inline-flex;
+    }
+
+    .#{$breakpoint-name}\:inline-block {
+      display: inline-block;
+    }
+  }
+}
