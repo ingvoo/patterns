@@ -1,16 +1,19 @@
-/* ----------------------------------------*\
-  SETTINGS
-\*---------------------------------------- */
+---
+title: Settings
+---
 
-@charset "UTF-8";
-
+## Breakpoints
+```scss
 $breakpoints: (
   sm: 640px,
   md: 768px,
   lg: 1024px,
   xl: 1280px,
 );
+```
 
+## Spaces
+```scss
 $spaces: (
   0: 0,
   1: 0.25rem,
@@ -31,20 +34,22 @@ $spaces: (
   48: 12rem,
   64: 16rem,
 );
+```
 
-/**
- * Border radius
- */
+## Border radius
+```scss
+$rounded-none: 0rem;
 $rounded-sm: 0.125rem;
 $rounded: 0.25rem;
 $rounded-md: 0.375rem;
 $rounded-lg: 0.5rem;
+```
 
-/**
- * Color scale
- */
+## Colors
+```scss
 $color-black: #000;
 $color-white: #fff;
+
 $color-gray-100: #f5f5f5;
 $color-gray-200: #eee;
 $color-gray-300: #e0e0e0;
@@ -57,16 +62,18 @@ $color-gray-900: #212121;
 
 $color-blue-500: #1264ce;
 
-/**
-* Colors
-*/
 $color-primary: $color-blue-500;
 $color-text: $color-gray-900;
 $color-border: $color-gray-400;
+```
 
-/**
-* Typography
-*/
+## Max widths
+```scss
+$max-w-6xl: 72rem;
+```
+
+## Typography
+```scss
 $font-base: 16px;
 $font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
@@ -81,21 +88,11 @@ $leading-snug: 1.375;
 $leading-normal: 1.5;
 $leading-relaxed: 1.625;
 $leading-loose: 2;
+```
 
-/**
-* Max Widths
-*/
-$max-w-6xl: 72rem;
-
-/**
- * Transitions
- */
+## Transitions
+```
 $transition-duration-250: 250ms;
 $transition-duration-400: 400ms;
 $transition-duration-500: 500ms;
-
-/**
-* Z-Index
-*/
-// $z-site-header: 500;
-// $z-modal: 800;
+```
