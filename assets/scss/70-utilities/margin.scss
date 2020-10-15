@@ -28,20 +28,70 @@
     margin-top: $space-value;
     margin-bottom: $space-value;
   }
+
+  .m-#{$space-name} {
+    margin: $space-value;
+  }
 }
 
-// TODO: Setup utilities for each breakpoint
-// TODO: Setup margin auto utility
-// @each $breakpoint-name, $breakpoint-value in $breakpoints {
-//   @include screen($breakpoint-name) {
-//     @each $space-name, $space-value in $spaces {
-//       .#{$breakpoint-name}:mt-#{$space-name} {
-//         margin-top: $space-value;
-//       }
+.ml-auto {
+  margin-left: auto;
+}
 
-//       .#{$breakpoint-name}:mb-#{$space-name} {
-//         margin-top: $space-value;
-//       }
-//     }
-//   }
-// }
+.mr-auto {
+  margin-right: auto;
+}
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include screen($breakpoint-name) {
+    .#{$breakpoint-name}ml-auto {
+      margin-left: auto;
+    }
+
+    .#{$breakpoint-name}mr-auto {
+      margin-right: auto;
+    }
+
+    .#{$breakpoint-name}mx-auto {
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @each $space-name, $space-value in $spaces {
+      .#{$breakpoint-name}:mt-#{$space-name} {
+        margin-top: $space-value;
+      }
+
+      .#{$breakpoint-name}:mb-#{$space-name} {
+        margin-bottom: $space-value;
+      }
+
+      .#{$breakpoint-name}:mr-#{$space-name} {
+        margin-right: $space-value;
+      }
+
+      .#{$breakpoint-name}:ml-#{$space-name} {
+        margin-left: $space-value;
+      }
+
+      .#{$breakpoint-name}:mx-#{$space-name} {
+        margin-left: $space-value;
+        margin-right: $space-value;
+      }
+
+      .#{$breakpoint-name}:my-#{$space-name} {
+        margin-top: $space-value;
+        margin-bottom: $space-value;
+      }
+
+      .#{$breakpoint-name}:m-#{$space-name} {
+        margin: $space-value;
+      }
+    }
+  }
+}
