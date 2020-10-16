@@ -1,0 +1,47 @@
+/* ----------------------------------------*\
+  BORDER
+\*---------------------------------------- */
+
+.border-0 {
+  border-width: 0;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-t {
+  border-top-width: 1px;
+}
+
+.border-l {
+  border-left-width: 1px;
+}
+
+.border-r {
+  border-right-width: 1px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
+}
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include screen($breakpoint-name) {
+    .#{$breakpoint-name}\:border-0 {
+      border-width: 0;
+    }
+    .#{$breakpoint-name}\:border-t {
+      border-top-width: 1px;
+    }
+    .#{$breakpoint-name}\:border-l {
+      border-left-width: 1px;
+    }
+    .#{$breakpoint-name}\:border-r {
+      border-right-width: 1px;
+    }
+    .#{$breakpoint-name}\:border-b {
+      border-bottom-width: 1px;
+    }
+  }
+}
