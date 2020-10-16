@@ -1,0 +1,16 @@
+/* ----------------------------------------*\
+  FORM INPUT
+\*---------------------------------------- */
+
+.form-input {
+  @include placeholder-color($color-text);
+  padding: size(4);
+  width: 100%;
+
+  line-height: 1.5;
+  font-size: $text-base;
+
+  border-width: 1px;
+  appearance: none;
+  background-color: $color-white;
+}

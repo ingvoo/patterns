@@ -53,3 +53,26 @@
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap;
 }
+
+/**
+ * Placeholder color
+ */
+@mixin placeholder-color($color) {
+  /* stylelint-disable selector-no-vendor-prefix */
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+
+  &:-moz-placeholder {
+    color: $color;
+  }
+
+  &::-moz-placeholder {
+    color: $color;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+  /* stylelint-enable selector-no-vendor-prefix */
+}
