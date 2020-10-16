@@ -1,0 +1,45 @@
+/* ----------------------------------------*\
+  POSITION
+\*---------------------------------------- */
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.static {
+  position: static;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  .#{$breakpoint-name}\:absolute {
+    position: absolute;
+  }
+
+  .#{$breakpoint-name}\:relative {
+    position: relative;
+  }
+
+  .#{$breakpoint-name}\:static {
+    position: static;
+  }
+
+  .#{$breakpoint-name}\:fixed {
+    position: fixed;
+  }
+
+  .#{$breakpoint-name}\:sticky {
+    position: sticky;
+  }
+}
