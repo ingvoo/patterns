@@ -2,26 +2,38 @@
   MAIN
 \*---------------------------------------- */
 
-// Settings
+/**
+ * Settings
+ */
 @import "10-settings/settings";
 
-// Tools
+/**
+ * Tools
+ */
 @import "20-tools/mixins";
 
-// Generic
+/**
+ * Generic
+ */
 @import "30-generic/reset";
 @import "30-generic/box-sizing";
 
-// Elements
+/**
+ * Elements
+ */
 @import "40-elements/base";
 @import "40-elements/elements";
 
-// Objects
+/**
+ * Objects
+ */
 @import "50-objects/container";
 @import "50-objects/embed";
 @import "50-objects/master";
 
-// Components
+/**
+ * Components
+ */
 @import "60-components/btn";
 @import "60-components/btn-reset";
 @import "60-components/form-input";
@@ -31,13 +43,24 @@
 @import "60-components/site-footer";
 @import "60-components/site-header";
 
-// Utilities
+/**
+ * Utilities
+ */
 @import "70-utilities/display";
+@import "70-utilities/margin";
+
+// Grid
 @import "70-utilities/gap";
 @import "70-utilities/grid-col";
 @import "70-utilities/grid-cols";
 @import "70-utilities/grid-row";
 @import "70-utilities/grid-rows";
-@import "70-utilities/margin";
+
+// Flex
+@import "70-utilities/flex";
+@import "70-utilities/flex-items";
+@import "70-utilities/flex-justify";
+
+// Typography
 @import "70-utilities/text-align";
 @import "70-utilities/truncate";

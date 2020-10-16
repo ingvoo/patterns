@@ -1,0 +1,58 @@
+/* ----------------------------------------*\
+  FLEX
+\*---------------------------------------- */
+
+/**
+* Flex directions
+*/
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-initial {
+  flex: 0 1 auto;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
+}
+
+.flex-none {
+  flex: none;
+}
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include screen($breakpoint-name) {
+    .#{$breakpoint-name}\:flex-col {
+      flex-direction: column;
+    }
+
+    .#{$breakpoint-name}\:flex-row {
+      flex-direction: row;
+    }
+
+    .#{$breakpoint-name}\:flex-initial {
+      flex: 0 1 auto;
+    }
+
+    .#{$breakpoint-name}\:flex-1 {
+      flex: 1 1 0%;
+    }
+
+    .#{$breakpoint-name}\:flex-auto {
+      flex: 1 1 auto;
+    }
+
+    .#{$breakpoint-name}\:flex-none {
+      flex: none;
+    }
+  }
+}
