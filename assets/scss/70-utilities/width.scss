@@ -1,0 +1,23 @@
+/* ----------------------------------------*\
+  WIDTH
+\*---------------------------------------- */
+
+.w-full {
+  width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include screen($breakpoint-name) {
+    .#{$breakpoint-name}\:w-full {
+      width: 100%;
+    }
+
+    .#{$breakpoint-name}\:w-screen {
+      width: 100vw;
+    }
+  }
+}

@@ -46,12 +46,18 @@
 /**
  * Utilities
  */
-@import "70-utilities/border";
 @import "70-utilities/color";
 @import "70-utilities/columns";
+
+// Box Model
 @import "70-utilities/display";
+@import "70-utilities/border";
 @import "70-utilities/margin";
 @import "70-utilities/padding";
+@import "70-utilities/width";
+@import "70-utilities/height";
+
+// Position
 @import "70-utilities/position";
 @import "70-utilities/z-index";
 
