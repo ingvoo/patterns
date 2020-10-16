@@ -1,6 +1,20 @@
-<div class="border">
-  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quis ipsam
-    assumenda inventore, minima voluptatibus facere adipisci rem vero ad
-    architecto eaque omnis repellendus maiores non quaerat! Ex, numquam
-    aspernatur.</p>
+<div class="p-4">
+  <p class="border p-4 mb-4">border</p>
+  <p class="border border-primary p-4 mb-4">border-primary</p>
+  <p class="border border-secondary p-4 mb-4">border-secondary</p>
+
+  <div class="grid grid-cols-4 gap-4">
+    <p class="border-r p-4">
+      border-r
+    </p>
+    <p class="border-l p-4">
+      border-l
+    </p>
+    <p class="border-t p-4">
+      border-t
+    </p>
+    <p class="border-b p-4">
+      border-b
+    </p>
+  </div>
 </div>
