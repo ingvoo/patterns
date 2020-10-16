@@ -1,0 +1,26 @@
+{% extends "@page-layout" %}
+
+{% block main %}
+<div class="container">
+  <h2>Contact</h2>
+  <div class="md:grid grid-cols-2 gap-8">
+    <div>
+      <p class="mt-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Nihil, neque ipsa! Maiores, molestias dicta. Ad, voluptatum assumenda
+        perferendis facere, voluptatem odio laborum, repellat sint laudantium
+        labore non cumque eaque tempore!
+      </p>
+      <h3>The five boxing wizards jump quickly</h3>
+      <p class="mt-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Nihil, neque ipsa! Maiores, molestias dicta. Ad, voluptatum assumenda
+        perferendis facere, voluptatem odio laborum, repellat sint laudantium
+        labore non cumque eaque tempore!
+      </p>
+    </div>
+
+    {% render '@form-contact' %}
+  </div>
+</div>
+{% endblock %}

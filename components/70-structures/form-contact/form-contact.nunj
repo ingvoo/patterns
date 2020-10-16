@@ -1,0 +1,27 @@
+<form>
+  <ul class="list">
+    <li>
+      <label>
+        <span class="block">First Name</span>
+        {% render '@form-input' %}
+      </label>
+    </li>
+    <li>
+      <label>
+        <span class="block">First Name</span>
+        {% render '@form-input' %}
+      </label>
+    </li>
+    <li>
+      <label>
+        <span class="block">Email</span>
+        {% render '@form-input' %}
+      </label>
+    </li>
+    <li>
+      <button class="btn">
+        Submit {% render '@icon', { id: 'chevron-right', class: 'ml-1' } %}
+      </button>
+    </li>
+  </ul>
+</form>
