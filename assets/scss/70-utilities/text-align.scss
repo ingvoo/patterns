@@ -2,16 +2,30 @@
   TEXT ALIGN
 \*---------------------------------------- */
 
-@each $breakpoint-name in $breakpoints {
-  .#{$breakpoint-name}text-left {
-    text-align: left;
-  }
+.text-left {
+  text-align: left;
+}
 
-  .#{$breakpoint-name}text-center {
-    text-align: center;
-  }
+.text-center {
+  text-align: center;
+}
 
-  .#{$breakpoint-name}text-right {
-    text-align: right;
+.text-right {
+  text-align: right;
+}
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include screen($breakpoint-name) {
+    .#{$breakpoint-name}\:text-left {
+      text-align: left;
+    }
+
+    .#{$breakpoint-name}\:text-center {
+      text-align: center;
+    }
+
+    .#{$breakpoint-name}\:text-right {
+      text-align: right;
+    }
   }
 }

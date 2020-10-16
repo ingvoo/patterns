@@ -1,0 +1,31 @@
+/*----------------------------------------*\
+  TYPOGRAPHY
+\*----------------------------------------*/
+
+.text-sm {
+  font-size: $text-sm;
+}
+
+.text-base {
+  font-size: $text-base;
+}
+
+.text-lg {
+  font-size: $text-lg;
+}
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include screen($breakpoint-name) {
+    .#{$breakpoint-name}\:text-sm {
+      font-size: $text-sm;
+    }
+
+    .#{$breakpoint-name}\:text-base {
+      font-size: $text-base;
+    }
+
+    .#{$breakpoint-name}\:text-lg {
+      font-size: $text-lg;
+    }
+  }
+}

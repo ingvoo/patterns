@@ -2,6 +2,40 @@
   COLOR
 \*---------------------------------------- */
 
+.text-white {
+  color: $color-white;
+}
+
+.text-black {
+  color: $color-white;
+}
+
+.text-primary {
+  color: $color-primary;
+}
+
+.text-secondary {
+  color: $color-secondary;
+}
+
+/**
+* Background
+*/
+.bg-white {
+  background-color: $color-white;
+}
+
+.bg-black {
+  background-color: $color-black;
+}
+
+.bg-primary {
+  background-color: $color-primary;
+}
+
+.bg-secondary {
+  background-color: $color-secondary;
+}
 
 /**
 * Border
