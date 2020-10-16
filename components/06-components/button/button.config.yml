@@ -1,3 +1,13 @@
 title: Button
 context:
-  text: Button
+  text: Subscribe
+variants:
+- name: secondary
+  context:
+    class: btn--secondary
+- name: small
+  context:
+    class: btn--small
+- name: large
+  context:
+    class: btn--large
