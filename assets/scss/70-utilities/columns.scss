@@ -1,0 +1,39 @@
+/*----------------------------------------*\
+  COLUMNS
+\*----------------------------------------*/
+
+.columns-2 {
+  columns: 250px 2;
+}
+
+.columns-3 {
+  columns: 250px 3;
+}
+
+.columns-gap-4 {
+  column-gap: size(4);
+}
+
+.columns-gap-8 {
+  column-gap: size(8);
+}
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include screen($breakpoint-name) {
+    .#{$breakpoint-name}\:columns-2 {
+      columns: 250px 2;
+    }
+
+    .#{$breakpoint-name}\:columns-3 {
+      columns: 250px 3;
+    }
+
+    .#{$breakpoint-name}\:columns-gap-4 {
+      column-gap: size(4);
+    }
+
+    .#{$breakpoint-name}\:columns-gap-8 {
+      column-gap: size(8);
+    }
+  }
+}
