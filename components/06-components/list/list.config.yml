@@ -1,0 +1,16 @@
+variants:
+  - name: list
+    context:
+      class: list
+  - name: list large
+    context:
+      class: list list--large
+  - name: list-inline
+    context:
+      class: list-inline
+  - name: list-inline large
+    context:
+      class: list-inline list-inline--large
+  - name: list-dash
+    context:
+      class: list-dash

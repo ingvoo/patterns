@@ -4,15 +4,23 @@
     {% render '@header' %}
     <main class="container">
       <h2>The quick brown fox jumps over the lazy dog</h2>
-    <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Nihil, neque ipsa! Maiores, molestias dicta. Ad, voluptatum assumenda
-      perferendis facere, voluptatem odio laborum, repellat sint laudantium
-      labore non cumque eaque tempore!</p>
-    <h3>The five boxing wizards jump quickly</h3>
-    <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Nihil, neque ipsa! Maiores, molestias dicta. Ad, voluptatum assumenda
-      perferendis facere, voluptatem odio laborum, repellat sint laudantium
-      labore non cumque eaque tempore!</p>
+      <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Nihil, neque ipsa! Maiores, molestias dicta. Ad, voluptatum assumenda
+        perferendis facere, voluptatem odio laborum, repellat sint laudantium
+        labore non cumque eaque tempore!</p>
+      <h3>The five boxing wizards jump quickly</h3>
+      <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Nihil, neque ipsa! Maiores, molestias dicta. Ad, voluptatum assumenda
+        perferendis facere, voluptatem odio laborum, repellat sint laudantium
+        labore non cumque eaque tempore!</p>
+
+      <h4>Example of a list element</h4>
+      <ul>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Cupiditate ratione eos quo?</li>
+        <li>Aliquid ipsum fugit porro.</li>
+        <li>Quasi rem placeat quod!</li>
+      </ul>
       <button class="btn mt-4">
         Button {% render '@icon', { id: 'chevron-right', class: 'ml-1' } %}
       </button>

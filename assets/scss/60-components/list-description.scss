@@ -1,0 +1,41 @@
+/* ----------------------------------------*\
+  LIST DESCRIPTION INLINE
+\*---------------------------------------- */
+
+.list-description {
+  dt:not(:first-of-type) {
+    margin-top: size(4);
+  }
+
+  /* stylelint-disable order/order */
+  @include screen(md) {
+    &::after,
+    &::before {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    dt {
+      float: left;
+      width: 100px;
+      margin-bottom: size(2);
+
+      &:not(:first-of-type) {
+        margin-top: 0;
+      }
+    }
+
+    dd {
+      margin-bottom: size(2);
+      margin-left: calc(100px + #{size(2)});
+
+      &::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    }
+  }
+  /* stylelint-enable order/order */
+}

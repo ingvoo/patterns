@@ -1,0 +1,52 @@
+/* ----------------------------------------*\
+  LIST
+\*---------------------------------------- */
+
+.list li {
+  padding-top: size(2);
+  padding-bottom: size(2);
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.list--large li {
+  padding-top: size(4);
+  padding-bottom: size(4);
+}
+
+/* ----------------------------------------*\
+  LIST INLINE
+\*---------------------------------------- */
+
+.list-inline {
+  display: flex;
+  flex-flow: row wrap;
+
+  li + li {
+    margin-left: size(4);
+  }
+}
+
+.list-inline--large li + li {
+  margin-left: size(8);
+}
+
+/* ----------------------------------------*\
+  LIST DASH
+\*---------------------------------------- */
+
+.list-dash li {
+  display: flex;
+
+  &::before {
+    content: "\2014";
+    display: block;
+    margin-right: size(4);
+  }
+}

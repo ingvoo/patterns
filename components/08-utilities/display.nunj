@@ -1,0 +1,43 @@
+<span class="block">This is a block</span>
+<p class="hidden">This is hidden</p>
+
+<h3>All display utilities</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th width="30%">Utility</th>
+      <th width="30%">Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>block</td>
+      <td><code>display: block</code></td>
+    </tr>
+    <tr>
+      <td>hidden</td>
+      <td><code>display: none</code></td>
+    </tr>
+    <tr>
+      <td>flex</td>
+      <td><code>display: flex</code></td>
+    </tr>
+    <tr>
+      <td>grid</td>
+      <td><code>display: grid</code></td>
+    </tr>
+    <tr>
+      <td>inline</td>
+      <td><code>display: inline</code></td>
+    </tr>
+    <tr>
+      <td>inline-flex</td>
+      <td><code>display: inline-flex</code></td>
+    </tr>
+    <tr>
+      <td>inline-grid</td>
+      <td><code>display: inline-grid</code></td>
+    </tr>
+  </tbody>
+</table>

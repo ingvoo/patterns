@@ -1,0 +1,22 @@
+<dl class="list-description">
+  <dt>Label</dt>
+  <dd>Description, Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Suscipit possimus
+    eos explicabo consequuntur fugit, eaque minus, qui laborum rerum, sed
+    architecto assumenda aspernatur dolores error voluptas nobis eligendi
+    exercitationem? Consequatur?</dd>
+  <dt>Label</dt>
+  <dd>Description, Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Suscipit possimus
+    eos explicabo consequuntur fugit, <a href="#">eaque minus,</a> qui laborum
+    rerum, sed
+    architecto assumenda aspernatur dolores error voluptas nobis eligendi
+    exercitationem? Consequatur?</dd>
+
+  <dt>Label</dt>
+  <dd>Description, Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Suscipit possimus
+    eos explicabo consequuntur fugit, eaque minus, qui laborum rerum, sed
+    architecto assumenda aspernatur dolores error voluptas nobis eligendi
+    exercitationem? Consequatur?</dd>
+</dl>

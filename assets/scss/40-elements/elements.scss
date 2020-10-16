@@ -40,10 +40,25 @@ small {
   font-size: 0.875rem;
 }
 
-/**
-* Media
-*/
+a {
+  color: $color-primary;
+  transition: color 0.2s;
+
+  &:hover,
+  &:focus {
+    color: $color-primary-action;
+  }
+}
+
 img {
   max-width: 100%;
   display: block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+dt {
+  font-weight: $font-bold;
 }

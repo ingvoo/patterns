@@ -1,0 +1,5 @@
+<ul class="{% if class %}{{ class }}{% endif %}">
+  <li>One</li>
+  <li>Two</li>
+  <li>Three</li>
+</ul>
