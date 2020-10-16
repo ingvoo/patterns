@@ -1,0 +1,133 @@
+/* ----------------------------------------*\
+  COL SPAN
+\*---------------------------------------- */
+
+.col-auto {
+  grid-column: auto;
+}
+
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
+.col-span-4 {
+  grid-column: span 4 / span 4;
+}
+
+/**
+ * col-start
+ */
+.col-start-1 {
+  grid-column-start: 1;
+}
+
+.col-start-2 {
+  grid-column-start: 2;
+}
+
+.col-start-3 {
+  grid-column-start: 3;
+}
+
+.col-start-4 {
+  grid-column-start: 4;
+}
+
+.col-start-auto {
+  grid-column-start: auto;
+}
+
+/**
+ * col-end
+ */
+.col-end-1 {
+  grid-column-end: 1;
+}
+
+.col-end-2 {
+  grid-column-end: 2;
+}
+
+.col-end-3 {
+  grid-column-end: 3;
+}
+
+.col-end-4 {
+  grid-column-end: 4;
+}
+
+.col-end-auto {
+  grid-column-end: auto;
+}
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include screen($breakpoint-name) {
+    .#{$breakpoint-name}\:col-auto {
+      grid-column: auto;
+    }
+
+    .#{$breakpoint-name}\:col-span-1 {
+      grid-column: span 1 / span 1;
+    }
+
+    .#{$breakpoint-name}\:col-span-2 {
+      grid-column: span 2 / span 2;
+    }
+
+    .#{$breakpoint-name}\:col-span-3 {
+      grid-column: span 3 / span 3;
+    }
+
+    .#{$breakpoint-name}\:col-span-4 {
+      grid-column: span 4 / span 4;
+    }
+
+    .#{$breakpoint-name}\:col-start-1 {
+      grid-column-start: 1;
+    }
+
+    .#{$breakpoint-name}\:col-start-2 {
+      grid-column-start: 2;
+    }
+
+    .#{$breakpoint-name}\:col-start-3 {
+      grid-column-start: 3;
+    }
+
+    .#{$breakpoint-name}\:col-start-4 {
+      grid-column-start: 4;
+    }
+
+    .#{$breakpoint-name}\:col-start-auto {
+      grid-column-start: auto;
+    }
+
+    .#{$breakpoint-name}\:col-end-1 {
+      grid-column-end: 1;
+    }
+
+    .#{$breakpoint-name}\:col-end-2 {
+      grid-column-end: 2;
+    }
+
+    .#{$breakpoint-name}\:col-end-3 {
+      grid-column-end: 3;
+    }
+
+    .#{$breakpoint-name}\:col-end-4 {
+      grid-column-end: 4;
+    }
+
+    .#{$breakpoint-name}\:col-end-auto {
+      grid-column-end: auto;
+    }
+  }
+}

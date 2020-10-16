@@ -1,0 +1,39 @@
+/* ----------------------------------------*\
+  GRID ROWS
+\*---------------------------------------- */
+
+.grid-rows-1 {
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+}
+
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.grid-rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+
+.grid-rows-none {
+  grid-template-rows: none;
+}
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include screen($breakpoint-name) {
+    .#{$breakpoint-name}\:grid-rows-1 {
+      grid-template-rows: repeat(1, minmax(0, 1fr));
+    }
+
+    .#{$breakpoint-name}\:grid-rows-2 {
+      grid-template-rows: repeat(2, minmax(0, 1fr));
+    }
+
+    .#{$breakpoint-name}\:grid-rows-3 {
+      grid-template-rows: repeat(3, minmax(0, 1fr));
+    }
+
+    .#{$breakpoint-name}\:grid-rows-none {
+      grid-template-rows: none;
+    }
+  }
+}
