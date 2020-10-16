@@ -3,6 +3,10 @@
 \*---------------------------------------- */
 
 @each $space-name, $space-value in $spaces {
+  .m-#{$space-name} {
+    margin: $space-value;
+  }
+
   .mt-#{$space-name} {
     margin-top: $space-value;
   }
@@ -27,10 +31,6 @@
   .my-#{$space-name} {
     margin-top: $space-value;
     margin-bottom: $space-value;
-  }
-
-  .m-#{$space-name} {
-    margin: $space-value;
   }
 }
 
@@ -63,34 +63,34 @@
     }
 
     @each $space-name, $space-value in $spaces {
-      .#{$breakpoint-name}:mt-#{$space-name} {
-        margin-top: $space-value;
-      }
-
-      .#{$breakpoint-name}:mb-#{$space-name} {
-        margin-bottom: $space-value;
-      }
-
-      .#{$breakpoint-name}:mr-#{$space-name} {
-        margin-right: $space-value;
-      }
-
-      .#{$breakpoint-name}:ml-#{$space-name} {
-        margin-left: $space-value;
-      }
-
-      .#{$breakpoint-name}:mx-#{$space-name} {
-        margin-left: $space-value;
-        margin-right: $space-value;
-      }
-
-      .#{$breakpoint-name}:my-#{$space-name} {
-        margin-top: $space-value;
-        margin-bottom: $space-value;
-      }
-
-      .#{$breakpoint-name}:m-#{$space-name} {
+      .#{$breakpoint-name}\:m-#{$space-name} {
         margin: $space-value;
+      }
+
+      .#{$breakpoint-name}\:mt-#{$space-name} {
+        margin-top: $space-value;
+      }
+
+      .#{$breakpoint-name}\:mb-#{$space-name} {
+        margin-bottom: $space-value;
+      }
+
+      .#{$breakpoint-name}\:mr-#{$space-name} {
+        margin-right: $space-value;
+      }
+
+      .#{$breakpoint-name}\:ml-#{$space-name} {
+        margin-left: $space-value;
+      }
+
+      .#{$breakpoint-name}\:mx-#{$space-name} {
+        margin-left: $space-value;
+        margin-right: $space-value;
+      }
+
+      .#{$breakpoint-name}\:my-#{$space-name} {
+        margin-top: $space-value;
+        margin-bottom: $space-value;
       }
     }
   }
