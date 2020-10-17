@@ -60,9 +60,16 @@ $color-gray-700: #616161;
 $color-gray-800: #424242;
 $color-gray-900: #212121;
 
-$color-blue-500: #1264ce;
+$color-blue-500: #4299e1;
+$color-blue-800: #2c5282;
+
+$color-orange-500: #ed8936;
+$color-orange-800: #9c4221;
 
 $color-primary: $color-blue-500;
+$color-primary-action: $color-blue-800;
+$color-secondary: $color-orange-500;
+$color-secondary-action: $color-orange-800;
 $color-text: $color-gray-900;
 $color-border: $color-gray-400;
 ```
@@ -88,6 +95,10 @@ $leading-snug: 1.375;
 $leading-normal: 1.5;
 $leading-relaxed: 1.625;
 $leading-loose: 2;
+
+$text-sm: 0.85rem;
+$text-base: 1rem;
+$text-lg: 1.25rem;
 ```
 
 ## Transitions
