@@ -26,33 +26,7 @@ title: Mixins
 }
 ```
 
-## Size
-
-```scss
-@function size($num) {
-  @if type-of($num) == number {
-    @if map-has-key($spaces, $num) {
-      @return map-get($spaces, $num);
-    } @else {
-      @warn "#{$num} is not available";
-      @return 0;
-    }
-  } @else {
-    @warn "#{$num} is not a number";
-    @return 0;
-  }
-}
-
-// e.g.
-.site-footer {
-  padding-left: size(8);
-  padding-right: size(8);
-}
-
-```
-
 ## Truncate
-
 ```scss
 @mixin truncate {
   white-space: nowrap;
@@ -67,7 +41,6 @@ title: Mixins
 ```
 
 ## Visually hidden
-
 ```scss
 @mixin visually-hidden {
   position: absolute;
@@ -77,5 +50,28 @@ title: Mixins
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap;
+}
+```
+
+## Placeholder color
+```scss
+@mixin placeholder-color($color) {
+  /* stylelint-disable selector-no-vendor-prefix */
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+
+  &:-moz-placeholder {
+    color: $color;
+  }
+
+  &::-moz-placeholder {
+    color: $color;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+  /* stylelint-enable selector-no-vendor-prefix */
 }
 ```

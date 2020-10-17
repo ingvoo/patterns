@@ -1,0 +1,27 @@
+/* ----------------------------------------*\
+  FUNCTIONS
+\*---------------------------------------- */
+
+/**
+ * Size
+ */
+@function size($num) {
+  @if type-of($num) == number {
+    @if map-has-key($spaces, $num) {
+      @return map-get($spaces, $num);
+    } @else {
+      @warn "#{$num} is not available";
+      @return 0;
+    }
+  } @else {
+    @warn "#{$num} is not a number";
+    @return 0;
+  }
+}
+
+/**
+ * Rem
+ */
+@function rem($size) {
+  @return $size / 14 * 1rem;
+}
