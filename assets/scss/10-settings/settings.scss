@@ -71,6 +71,11 @@ $color-text: $color-gray-900;
 $color-border: $color-gray-400;
 
 /**
+* Max Widths
+*/
+$max-w-6xl: 72rem;
+
+/**
 * Typography
 */
 $font-base: 16px;
@@ -91,11 +96,6 @@ $leading-loose: 2;
 $text-sm: 0.85rem;
 $text-base: 1rem;
 $text-lg: 1.25rem;
-
-/**
-* Max Widths
-*/
-$max-w-6xl: 72rem;
 
 /**
  * Transitions

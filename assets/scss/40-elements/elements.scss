@@ -62,3 +62,19 @@ ul {
 dt {
   font-weight: $font-bold;
 }
+
+code {
+  background-color: $color-gray-100;
+  color: $color-primary;
+  font-size: text-sm;
+  font-weight: font-regular;
+  padding: size(1) size(2);
+  border-radius: $rounded;
+}
+
+th,
+td {
+  padding: size(2) size(3);
+  border-width: 1px;
+  vertical-align: top;
+}
