@@ -41,12 +41,12 @@
     --btn-bg-action: #{$color-secondary-action};
   }
 
-  &.btn--small {
+  &.btn--sm {
     --btn-padding: #{size(2)};
     --btn-text-size: #{$text-sm};
   }
 
-  &.btn--large {
+  &.btn--lg {
     --btn-padding: #{size(4)} #{size(6)};
     --btn-text-size: #{$text-lg};
   }

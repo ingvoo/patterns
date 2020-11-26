@@ -2,15 +2,15 @@ variants:
   - name: list
     context:
       class: list
-  - name: list large
+  - name: list lg
     context:
-      class: list list--large
+      class: list list--lg
   - name: list-inline
     context:
       class: list-inline
-  - name: list-inline large
+  - name: list-inline and list--lg
     context:
-      class: list-inline list-inline--large
+      class: list-inline list-inline--lg
   - name: list-dash
     context:
       class: list-dash

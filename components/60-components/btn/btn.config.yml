@@ -5,9 +5,9 @@ variants:
 - name: secondary
   context:
     class: btn--secondary
-- name: small
+- name: sm
   context:
-    class: btn--small
-- name: large
+    class: btn--sm
+- name: lg
   context:
-    class: btn--large
+    class: btn--lg

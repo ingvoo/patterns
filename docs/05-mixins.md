@@ -14,7 +14,7 @@ title: Mixins
   }
 }
 
-// .section that has more padding on medium and larget devices
+// .section that has more padding on medium and larger devices
 .section {
   padding-left: 1rem;
   padding-right: 1rem;
