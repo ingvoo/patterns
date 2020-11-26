@@ -28,7 +28,7 @@
   border: 1px solid transparent;
   border-radius: $rounded-md;
   vertical-align: middle;
-  transition: background-color $transition-duration-250;
+  transition: background-color $timing-250;
   cursor: pointer;
 
   &:hover,
