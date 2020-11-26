@@ -103,3 +103,6 @@ You can then easily use an icon in a template with the icon snippet:
 ```
 
 **Warning:** This method of including remote SVG file is not supported by Internet Explorer 11 and below. You may want to polyfill it with [svgxuse](https://github.com/Keyamoon/svgxuse).
+
+## Credits
+This project was originally cloned from https://github.com/liip/styleguide-starterkit. Very special thanks to to [Liip](https://github.com/liip) and to [Benoît Burgener](https://github.com/LeBenLeBen).
