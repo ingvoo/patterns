@@ -1,3 +1,5 @@
+## [0.4.2](https://github.com/ingvijonasson/patterns/compare/0.4.1...0.4.2) (2021-04-04)
+
 ## [0.4.1](https://github.com/ingvijonasson/patterns/compare/0.4.0...0.4.1) (2020-10-17)
 
 # [0.4.0](https://github.com/ingvijonasson/patterns/compare/0.2.0...0.4.0) (2020-10-16)
