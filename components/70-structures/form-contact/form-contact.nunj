@@ -19,7 +19,7 @@
       </label>
     </li>
     <li>
-      <button class="btn">
+      <button class="button">
         Submit {% render '@icon', { id: 'chevron-right', class: 'ml-1' } %}
       </button>
     </li>
