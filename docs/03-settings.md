@@ -103,7 +103,7 @@ $text-lg: 1.25rem;
 
 ## Transitions
 ```
-$timing-250: 250ms;
-$timing-400: 400ms;
-$timing-500: 500ms;
+$duration-250: 250ms;
+$duration-400: 400ms;
+$duration-500: 500ms;
 ```
