@@ -40,6 +40,10 @@ small {
   font-size: 0.875rem;
 }
 
+p + p {
+  margin-top: size(4);
+}
+
 a {
   color: $color-primary;
   transition: color 0.2s;
