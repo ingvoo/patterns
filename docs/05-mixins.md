@@ -34,8 +34,8 @@ title: Mixins
   text-overflow: ellipsis;
 }
 
-// .btn stays on one line (does not line break) and text gets truncated with ellipsis
-.btn {
+// .button stays on one line (does not line break) and text gets truncated with ellipsis
+.button {
   @include truncate;
 }
 ```
