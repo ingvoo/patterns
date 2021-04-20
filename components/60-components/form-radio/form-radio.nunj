@@ -1,0 +1,6 @@
+<label class="form-control">
+  <input class="form-control__radio" type="radio" name="gender" value="male" {%
+    if disabled %}disabled{% endif%} />
+  <span class="form-control__visual"></span>
+  <span class="form-control__text">{{ label }}</span>
+</label>
