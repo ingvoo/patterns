@@ -1,1 +1,4 @@
-<input type="text" class="form-input" placeholder="First Name" />
+<label>
+  <span class="text-label">First name</span>
+  <input type="text" class="form-input" placeholder="Gary" />
+</label>
