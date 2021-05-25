@@ -1,18 +1,17 @@
 /*----------------------------------------*\
-  Accordion
+  Collapse
 \*----------------------------------------*/
 
-const accordionBtns = document.querySelectorAll('.accordion__btn');
+const collapseBtns = document.querySelectorAll('[data-collapse]');
 
-accordionBtns.forEach((btn) => {
+collapseBtns.forEach((btn) => {
   const id = btn.getAttribute('aria-controls');
   const content = document.querySelector(`#${id}`);
 
   btn.addEventListener('click', () => {
-    const isExpanded = btn.getAttribute('aria-expanded') === 'true' || false;
+    const isExpanded = btn.getAttribute('aria-expanded') === 'true';
 
     btn.setAttribute('aria-expanded', !isExpanded);
     content.hidden = isExpanded;
   });
 });
-  

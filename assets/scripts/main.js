@@ -12,4 +12,4 @@ import 'icons/chevron-right.svg';
 import 'icons/chevron-left.svg';
 
 // Components
-import 'components/accordion';
+import 'components/collapse';
