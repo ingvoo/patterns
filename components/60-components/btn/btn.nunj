@@ -1,1 +1,0 @@
-<button class="btn{% if class %} {{ class }}{% endif%}">{{ text }}</button>

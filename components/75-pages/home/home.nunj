@@ -20,7 +20,7 @@
     <li>Aliquid ipsum fugit porro.</li>
     <li>Quasi rem placeat quod!</li>
   </ul>
-  <button class="btn mt-4">
+  <button class="button mt-4">
     Button {% render '@icon', { id: 'chevron-right', class: 'ml-1' } %}
   </button>
 </div>

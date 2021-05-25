@@ -1,25 +1,25 @@
 <form>
   <ul class="list">
     <li>
-      <label>
-        <span class="block">First Name</span>
-        {% render '@form-input' %}
-      </label>
+      <fieldset>
+        <legend class="text-label">Gender</legend>
+        {% render '@form-radio', { value: 'gender', label: 'Male'} %}
+        {% render '@form-radio', { value: 'gender', label: 'Female' } %}
+        {% render '@form-radio', { value: 'gender', label: 'Rather not say',
+        disabled: true } %}
+      </fieldset>
     </li>
     <li>
-      <label>
-        <span class="block">First Name</span>
-        {% render '@form-input' %}
-      </label>
+      {% render '@form-input' %}
     </li>
     <li>
-      <label>
-        <span class="block">Email</span>
-        {% render '@form-input' %}
-      </label>
+      {% render '@form-input' %}
     </li>
     <li>
-      <button class="btn">
+      {% render '@form-input' %}
+    </li>
+    <li>
+      <button class="button">
         Submit {% render '@icon', { id: 'chevron-right', class: 'ml-1' } %}
       </button>
     </li>

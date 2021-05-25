@@ -4,10 +4,10 @@ context:
 variants:
 - name: secondary
   context:
-    class: btn--secondary
+    class: button--secondary
 - name: sm
   context:
-    class: btn--sm
+    class: button--sm
 - name: lg
   context:
-    class: btn--lg
+    class: button--lg
