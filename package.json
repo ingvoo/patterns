@@ -53,6 +53,7 @@
     "prettier": "^2.1.2",
     "release-it": "^13.6.2",
     "sass-loader": "^8.0.2",
+    "style-dictionary": "^3.0.0-rc.9",
     "stylelint": "13.6.0",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-sass-guidelines": "7.0.0",
