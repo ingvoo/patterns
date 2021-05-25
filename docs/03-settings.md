@@ -38,18 +38,15 @@ $spaces: (
 
 ## Border radius
 ```scss
-$rounded-none: 0rem;
 $rounded-sm: 0.125rem;
 $rounded: 0.25rem;
 $rounded-md: 0.375rem;
-$rounded-lg: 0.5rem;
 ```
 
-## Colors
+## Color Scale
 ```scss
 $color-black: #000;
 $color-white: #fff;
-
 $color-gray-100: #f5f5f5;
 $color-gray-200: #eee;
 $color-gray-300: #e0e0e0;
@@ -59,13 +56,14 @@ $color-gray-600: #757575;
 $color-gray-700: #616161;
 $color-gray-800: #424242;
 $color-gray-900: #212121;
-
 $color-blue-500: #4299e1;
 $color-blue-800: #2c5282;
-
 $color-orange-500: #ed8936;
 $color-orange-800: #9c4221;
+```
 
+## Color Mapping
+```scss
 $color-primary: $color-blue-500;
 $color-primary-action: $color-blue-800;
 $color-secondary: $color-orange-500;

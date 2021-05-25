@@ -7,12 +7,7 @@
 
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad soluta culpa sit?
   Iusto reprehenderit, minus, est <a href="#">porro sint</a> praesentium
-  voluptatem ab cum tempora nisi veniam quisquam autem officiis, incidunt nemo.
-</p>
-
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad soluta culpa sit?
-  Iusto reprehenderit, minus, est <a href="#">porro sint</a> praesentium
-  voluptatem ab cum tempora nisi veniam quisquam autem officiis, incidunt nemo.
+  voluptatem ab cum <strong>strong</strong> and <em>italic</em> quisquam autem officiis, incidunt nemo.
 </p>
 
 <ul>

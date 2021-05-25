@@ -1,7 +1,6 @@
-title: Radio
+title: Input
 context:
-  label: Label
-  value: value
+  label: label
 variants:
 - name: disabled
   context:

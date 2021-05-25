@@ -4,13 +4,14 @@
 
 .form-input {
   @include placeholder-color($color-text);
-  padding: size(4);
+  padding: size(2) size(3);
   width: 100%;
 
   line-height: 1.5;
   font-size: $text-base;
 
   border-width: 1px;
+  border-radius: $rounded;
   appearance: none;
   background-color: $color-white;
 }
