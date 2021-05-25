@@ -43,44 +43,48 @@
 @import "60-components/list";
 @import "60-components/list-description";
 @import "60-components/text-label";
-@import "60-components/site-footer";
-@import "60-components/site-header";
+
+/**
+ * Patterns
+ */
+@import "70-patterns/site-footer";
+@import "70-patterns/site-header";
 
 /**
  * Utilities
  */
-@import "70-utilities/color";
-@import "70-utilities/columns";
+@import "80-utilities/color";
+@import "80-utilities/columns";
 
 // Box Model
-@import "70-utilities/display";
-@import "70-utilities/border";
-@import "70-utilities/margin";
-@import "70-utilities/padding";
-@import "70-utilities/width";
-@import "70-utilities/height";
+@import "80-utilities/display";
+@import "80-utilities/border";
+@import "80-utilities/margin";
+@import "80-utilities/padding";
+@import "80-utilities/width";
+@import "80-utilities/height";
 
 // Position
-@import "70-utilities/position";
-@import "70-utilities/z-index";
+@import "80-utilities/position";
+@import "80-utilities/z-index";
 
 // Grid
-@import "70-utilities/gap";
-@import "70-utilities/grid-col";
-@import "70-utilities/grid-cols";
-@import "70-utilities/grid-row";
-@import "70-utilities/grid-rows";
+@import "80-utilities/gap";
+@import "80-utilities/grid-col";
+@import "80-utilities/grid-cols";
+@import "80-utilities/grid-row";
+@import "80-utilities/grid-rows";
 
 // Flex
-@import "70-utilities/flex";
-@import "70-utilities/flex-items";
-@import "70-utilities/flex-justify";
+@import "80-utilities/flex";
+@import "80-utilities/flex-items";
+@import "80-utilities/flex-justify";
 
 // Typography
-@import "70-utilities/text-align";
-@import "70-utilities/text-decoration";
-@import "70-utilities/text-transform";
-@import "70-utilities/text-size";
-@import "70-utilities/font-weight";
-@import "70-utilities/measure";
-@import "70-utilities/truncate";
+@import "80-utilities/text-align";
+@import "80-utilities/text-decoration";
+@import "80-utilities/text-transform";
+@import "80-utilities/text-size";
+@import "80-utilities/font-weight";
+@import "80-utilities/measure";
+@import "80-utilities/truncate";
