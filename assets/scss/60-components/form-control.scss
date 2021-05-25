@@ -19,6 +19,11 @@
   &:checked + .form-control__visual::before {
     transform: none;
   }
+
+  &:disabled + .form-control__visual {
+    cursor: not-allowed;
+    opacity: 0.3;
+  }
 }
 
 .form-control__visual {

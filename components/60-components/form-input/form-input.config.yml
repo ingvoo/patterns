@@ -1,0 +1,8 @@
+title: Input
+context:
+  label: label
+variants:
+- name: disabled
+  context:
+    label: Disabled
+    disabled: true
