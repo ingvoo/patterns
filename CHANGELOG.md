@@ -1,3 +1,11 @@
+# [0.6.0](https://github.com/ingvijonasson/patterns/compare/0.5.0...0.6.0) (2021-05-25)
+
+
+### Features
+
+* introduce accordion component ([91e897e](https://github.com/ingvijonasson/patterns/commit/91e897e9f0801c029c345e698299e9c4f948996c))
+* introduce component collapse ([48080e6](https://github.com/ingvijonasson/patterns/commit/48080e61c907732e1a5b7df1d18c6cb0469d677b))
+
 # [0.5.0](https://github.com/ingvijonasson/patterns/compare/0.4.2...0.5.0) (2021-04-20)
 
 
