@@ -2,12 +2,12 @@ title: Button
 context:
   text: Subscribe
 variants:
-- name: secondary
+- name: Secondary
   context:
     class: button--secondary
-- name: sm
+- name: Small
   context:
-    class: button--sm
-- name: lg
+    class: button--small
+- name: Large
   context:
-    class: button--lg
+    class: button--large

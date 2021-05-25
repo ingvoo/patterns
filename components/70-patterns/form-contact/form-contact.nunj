@@ -18,6 +18,9 @@
       {% render '@form-input', { label: 'Email', type: 'email', placeholder: 'john.doe@mail.com'} %}
     </li>
     <li>
+      {% render '@form-checkbox', { label: 'Subscribe to our newsletter' } %}
+    </li>
+    <li>
       <button class="button">
         Submit {% render '@icon', { id: 'chevron-right', class: 'ml-1' } %}
       </button>
