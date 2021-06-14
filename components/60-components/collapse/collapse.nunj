@@ -1,0 +1,5 @@
+<button class="button" data-collapse aria-controls="this-id" aria-expanded="false">Collapse content</button>
+
+<article id="this-id" class="p-2" hidden>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nostrum molestiae corrupti nemo ipsam sed, beatae dicta esse hic quo et nobis qui impedit, repellat dolorum iusto, soluta quasi quod.</p>
+</article>

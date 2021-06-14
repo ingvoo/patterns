@@ -5,18 +5,20 @@
         <legend class="text-label">Gender</legend>
         {% render '@form-radio', { value: 'gender', label: 'Male'} %}
         {% render '@form-radio', { value: 'gender', label: 'Female' } %}
-        {% render '@form-radio', { value: 'gender', label: 'Rather not say',
-        disabled: true } %}
+        {% render '@form-radio', { value: 'gender', label: 'Rather not say' } %}
       </fieldset>
     </li>
     <li>
-      {% render '@form-input' %}
+      {% render '@form-input', { label: 'First name', type: 'text', placeholder: 'John'} %}
     </li>
     <li>
-      {% render '@form-input' %}
+      {% render '@form-input', { label: 'Last name', type: 'text', placeholder: 'Doe'} %}
     </li>
     <li>
-      {% render '@form-input' %}
+      {% render '@form-input', { label: 'Email', type: 'email', placeholder: 'john.doe@mail.com'} %}
+    </li>
+    <li>
+      {% render '@form-checkbox', { label: 'Subscribe to our newsletter' } %}
     </li>
     <li>
       <button class="button">

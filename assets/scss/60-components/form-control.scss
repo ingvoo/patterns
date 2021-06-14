@@ -9,7 +9,8 @@
   grid-gap: 0.5em;
 }
 
-.form-control__radio {
+.form-control__radio,
+.form-control__checkbox {
   @include visually-hidden;
 
   &:focus + .form-control__visual {
@@ -18,6 +19,11 @@
 
   &:checked + .form-control__visual::before {
     transform: none;
+  }
+
+  &:disabled + .form-control__visual {
+    cursor: not-allowed;
+    opacity: 0.3;
   }
 }
 
@@ -42,5 +48,13 @@
     box-shadow: inset 1em 1em $color-primary;
     border-radius: 50%;
     transition: transform $duration-150 ease-in-out;
+  }
+}
+
+.form-control__checkbox + .form-control__visual {
+  border-radius: $rounded;
+
+  &::before {
+    border-radius: 2px;
   }
 }

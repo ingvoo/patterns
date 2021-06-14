@@ -11,5 +11,5 @@ import 'scss/main.scss';
 import 'icons/chevron-right.svg';
 import 'icons/chevron-left.svg';
 
-// Here you can import your components, icons, etc.
-// import modal from 'components/Modal';
+// Components
+import 'components/collapse';
