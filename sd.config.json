@@ -1,10 +1,10 @@
 {
-  "source": ["tokens.json"],
+  "source": ["tokens/**/*.json"],
   "platforms": {
     "css": {
-      "transformGroup": "css",
+      "transformGroup": "scss",
       "files": [{
-        "destination": "variables.css",
+        "destination": "assets/scss/05-tokens/tokens.scss",
         "format": "css/variables",
         "options": {
           "outputReferences": true

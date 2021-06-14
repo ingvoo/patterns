@@ -26,7 +26,8 @@
     "format": "npm run prettier:fix && npm run eslint:fix",
     "release": "release-it",
     "lint": "npm run stylelint",
-    "stylelint": "stylelint **/*.scss"
+    "stylelint": "stylelint **/*.scss",
+    "tokens": "style-dictionary build --config sd.config.json"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
@@ -53,7 +54,7 @@
     "prettier": "^2.1.2",
     "release-it": "^13.6.2",
     "sass-loader": "^8.0.2",
-    "style-dictionary": "^3.0.0-rc.9",
+    "style-dictionary": "^3.0.1",
     "stylelint": "13.6.0",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-sass-guidelines": "7.0.0",

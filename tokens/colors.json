@@ -1,0 +1,7 @@
+{
+  "color": {
+    "red": { "value": "#ff0000" },
+    "danger": { "value": "{color.red.value}" },
+    "error": { "value": "{color.danger.value}" }
+  }
+}
