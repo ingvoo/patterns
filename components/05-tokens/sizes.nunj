@@ -1,22 +1,23 @@
-<section id="spaces">hello</section>
+<section id="spaces">
+  <div class="container">
+    <h2>All spaces available</h2>
+    <ul class="list" id="spaces-list"></ul>
+  </div>
+</section>
 
 <script>
-  let spaces = fetch('/tokens.json')
-  .then(response => response.json())
-  .then(data => console.log(data));
+  let spacesList = document.querySelector('#spaces-list')
 
-  let spaces = document.querySelector('#spaces')
-  const list = document.createElement('ul');
+  const tokens = fetch('/tokens.json')
+  .then(res => res.json())
+  .then(json => showColors(json.space));
 
-  for (let i = 0; i < spaces.length; i++) {
-    const element = spaces[i];
-
+function showColors(items) {
+  for (const key in items) {
     let el = document.createElement('li');
-    el.innerHTML = 'CreateElement example';
-
-    list.appendChild(div);
+    el.innerHTML = `${key} is ${items[key]}`;
+    spacesList.appendChild(el);
   }
-
-  spaces.appendChild(list);
+}
 
 </script>
