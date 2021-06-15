@@ -1,14 +1,22 @@
+<section id="spaces">hello</section>
 
-hi
+<script>
+  let spaces = fetch('/tokens.json')
+  .then(response => response.json())
+  .then(data => console.log(data));
 
-<script type="text/javascript">
-  let response = fetch('../../tokens/spaces.json');
+  let spaces = document.querySelector('#spaces')
+  const list = document.createElement('ul');
 
-  if (response.ok) {
-    let json = response.json();
-    console.log(json);
-  } else {
-    console.log("HTTP-Error: " + response.status);
+  for (let i = 0; i < spaces.length; i++) {
+    const element = spaces[i];
+
+    let el = document.createElement('li');
+    el.innerHTML = 'CreateElement example';
+
+    list.appendChild(div);
   }
 
-  </script>
+  spaces.appendChild(list);
+
+</script>

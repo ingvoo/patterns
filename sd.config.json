@@ -10,6 +10,22 @@
           "outputReferences": true
         }
       }]
+    },
+    "scss": {
+      "transformGroup": "scss",
+      "files": [{
+        "destination": "assets/scss/05-tokens/spaces.scss",
+        "format": "scss/map-flat",
+        "mapName": "tokens"
+      }]
+    },
+    "json": {
+      "transformGroup": "web",
+      "files": [{
+        "destination": "public/tokens.json",
+        "format": "json/nested",
+        "mapName": "tokens"
+      }]
     }
   }
 }

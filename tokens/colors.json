@@ -1,6 +1,6 @@
 {
   "color": {
-    "red": { "value": "#ff0000" },
+    "red": { "value": "#f00" },
     "danger": { "value": "{color.red.value}" },
     "error": { "value": "{color.danger.value}" }
   }
