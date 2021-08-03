@@ -11,7 +11,7 @@
       @content;
     }
   } @else {
-    @error "There is no breakpoint called #{$name}";
+    @error 'There is no breakpoint called #{$name}';
   }
 }
 

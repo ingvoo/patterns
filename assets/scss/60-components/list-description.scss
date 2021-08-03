@@ -11,7 +11,7 @@
   @include screen(md) {
     &::after,
     &::before {
-      content: "";
+      content: '';
       display: table;
       clear: both;
     }
@@ -31,7 +31,7 @@
       margin-left: calc(100px + #{size(2)});
 
       &::after {
-        content: "";
+        content: '';
         display: table;
         clear: both;
       }
