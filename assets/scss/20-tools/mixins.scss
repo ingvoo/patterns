@@ -38,6 +38,13 @@
 }
 
 /**
+* Focus
+*/
+@mixin focus($color: currentColor) {
+  outline: dotted 3px $color;
+}
+
+/**
  * Placeholder color
  */
 @mixin placeholder-color($color) {
