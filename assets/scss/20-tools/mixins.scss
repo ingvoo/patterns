@@ -11,7 +11,7 @@
       @content;
     }
   } @else {
-    @error "There is no breakpoint called #{$name}";
+    @error 'There is no breakpoint called #{$name}';
   }
 }
 
@@ -35,6 +35,13 @@
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap;
+}
+
+/**
+* Focus
+*/
+@mixin focus($color: currentColor) {
+  outline: dotted 3px $color;
 }
 
 /**

@@ -51,7 +51,7 @@
   display: flex;
 
   &::before {
-    content: "\2014";
+    content: '\2014';
     display: block;
     margin-right: size(4);
   }

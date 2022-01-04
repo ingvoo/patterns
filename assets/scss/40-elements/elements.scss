@@ -51,6 +51,13 @@ a {
   &:hover,
   &:focus {
     color: $color-primary-action;
+    text-decoration: none;
+  }
+
+  &:focus {
+    @include focus;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 
