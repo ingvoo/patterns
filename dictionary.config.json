@@ -2,6 +2,7 @@
   "source": ["tokens/**/*.json"],
   "platforms": {
     "css": {
+      "transforms": ["color/hsl", "size/rem"],
       "transformGroup": "scss",
       "files": [{
         "destination": "assets/scss/05-tokens/tokens.scss",

@@ -12,6 +12,6 @@ html {
   font-size: $font-base;
   font-weight: $font-regular;
   line-height: $leading-normal;
-  color: $color-text;
-  background-color: $color-white;
+  color: var(--color-text);
+  background-color: var(--color-white);
 }

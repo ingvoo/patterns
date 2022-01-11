@@ -3,8 +3,8 @@
 \*---------------------------------------- */
 
 .form-input {
-  @include placeholder-color($color-text);
-  padding: size(2) size(3);
+  @include placeholder-color(var(--color-text));
+  padding: var(--space-2) var(--space-3);
   width: 100%;
 
   line-height: 1.5;
@@ -13,5 +13,5 @@
   border-width: 1px;
   border-radius: $rounded;
   appearance: none;
-  background-color: $color-white;
+  background-color: var(--color-white);
 }

@@ -3,10 +3,10 @@
 \*---------------------------------------- */
 
 .site-header {
-  padding-top: size(6);
-  padding-bottom: size(6);
-  color: $color-white;
-  background-color: $color-primary;
+  padding-top: var(--space-6);
+  padding-bottom: var(--space-6);
+  color: var(--color-white);
+  background-color: var(--color-primary);
 }
 
 .site-header__title {

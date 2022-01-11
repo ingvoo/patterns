@@ -28,7 +28,7 @@
     "prettier:fix": "prettier --write assets/scripts/**/*.js",
     "validate": "npm run prettier && npm run eslint",
     "format": "npm run prettier:fix && npm run eslint:fix",
-    "tokens": "style-dictionary build --config sd.config.json"
+    "tokens": "style-dictionary build --config dictionary.config.json"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",

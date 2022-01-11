@@ -6,5 +6,5 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  border: 0 solid $color-border;
+  border: 0 solid var(--color-border);
 }
