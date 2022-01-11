@@ -1,12 +1,14 @@
 module.exports = {
+  plugins: ['stylelint-prettier'],
   extends: [
     'stylelint-prettier/recommended',
     'stylelint-config-sass-guidelines',
   ],
   rules: {
+    'prettier/prettier': true,
     'selector-class-pattern': null,
+    'selector-no-vendor-prefix': null,
     'order/properties-alphabetical-order': null,
-    'string-quotes': 'double',
-    'max-nesting-depth': 2,
+    'max-nesting-depth': 4,
   },
 };

@@ -14,7 +14,7 @@
   @include visually-hidden;
 
   &:focus + .form-control__visual {
-    box-shadow: 0 0 0 0.05em #fff, 0 0 0.15em 0.15em $color-primary;
+    box-shadow: 0 0 0 0.05em #fff, 0 0 0.15em 0.15em var(--color-primary);
   }
 
   &:checked + .form-control__visual::before {
@@ -38,14 +38,14 @@
   border-color: currentColor;
 
   &::before {
-    content: "";
+    content: '';
     display: block;
     width: 0.5em;
     height: 0.5em;
     transform: scale(0);
 
     //We use box-shadow instead of a background-color in case this gets printed where background colors are often not printed and therefore the radio state will be missing
-    box-shadow: inset 1em 1em $color-primary;
+    box-shadow: inset 1em 1em var(--color-primary);
     border-radius: 50%;
     transition: transform $duration-150 ease-in-out;
   }

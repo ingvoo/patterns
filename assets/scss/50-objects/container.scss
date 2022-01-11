@@ -3,8 +3,8 @@
 \*---------------------------------------- */
 
 .container {
-  padding-left: size(4);
-  padding-right: size(4);
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
   max-width: $max-w-6xl;
   margin-left: auto;
   margin-right: auto;

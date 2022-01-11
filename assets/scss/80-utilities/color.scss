@@ -3,55 +3,55 @@
 \*---------------------------------------- */
 
 .text-white {
-  color: $color-white;
+  color: var(--color-white);
 }
 
 .text-black {
-  color: $color-white;
+  color: var(--color-black);
 }
 
 .text-primary {
-  color: $color-primary;
+  color: var(--color-primary);
 }
 
 .text-secondary {
-  color: $color-secondary;
+  color: var(--color-secondary);
 }
 
 /**
 * Background
 */
 .bg-white {
-  background-color: $color-white;
+  background-color: var(--color-white);
 }
 
 .bg-black {
-  background-color: $color-black;
+  background-color: var(--color-black);
 }
 
 .bg-primary {
-  background-color: $color-primary;
+  background-color: var(--color-primary);
 }
 
 .bg-secondary {
-  background-color: $color-secondary;
+  background-color: var(--color-secondary);
 }
 
 /**
 * Border
 */
 .border-white {
-  border-color: $color-white;
+  border-color: var(--color-white);
 }
 
 .border-black {
-  border-color: $color-black;
+  border-color: var(--color-black);
 }
 
 .border-primary {
-  border-color: $color-primary;
+  border-color: var(--color-primary);
 }
 
 .border-secondary {
-  border-color: $color-secondary;
+  border-color: var(--color-secondary);
 }

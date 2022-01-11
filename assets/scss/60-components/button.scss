@@ -3,11 +3,11 @@
 \*---------------------------------------- */
 
 :root {
-  --button-padding: #{size(3)} #{size(4)};
+  --button-padding: var(--space-3) var(--space-4);
   --button-text-size: #{$font-base};
-  --button-text: #{$color-white};
-  --button-bg: #{$color-primary};
-  --button-bg-action: #{$color-primary-action};
+  --button-text: var(--color-white);
+  --button-bg: var(--color-primary);
+  --button-bg-action: var(--color-primary-action);
 }
 
 .button,
@@ -37,17 +37,17 @@
   }
 
   &.button--secondary {
-    --button-bg: #{$color-secondary};
-    --button-bg-action: #{$color-secondary-action};
+    --button-bg: var(--color-secondary);
+    --button-bg-action: var(--color-secondary-action);
   }
 
   &.button--small {
-    --button-padding: #{size(2)};
+    --button-padding: var(--space-2);
     --button-text-size: #{$text-sm};
   }
 
   &.button--large {
-    --button-padding: #{size(4)} #{size(6)};
+    --button-padding: var(--space-4) var(--space-6);
     --button-text-size: #{$text-lg};
   }
 }

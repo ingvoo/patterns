@@ -11,11 +11,11 @@
 }
 
 .columns-gap-4 {
-  column-gap: size(4);
+  column-gap: var(--space-4);
 }
 
 .columns-gap-8 {
-  column-gap: size(8);
+  column-gap: var(--space-8);
 }
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
@@ -29,11 +29,11 @@
     }
 
     .#{$breakpoint-name}\:columns-gap-4 {
-      column-gap: size(4);
+      column-gap: var(--space-4);
     }
 
     .#{$breakpoint-name}\:columns-gap-8 {
-      column-gap: size(8);
+      column-gap: var(--space-8);
     }
   }
 }

@@ -4,6 +4,6 @@
 
 .text-label {
   display: block;
-  padding-bottom: size(1);
+  padding-bottom: var(--space-1);
   font-weight: $font-bold;
 }
