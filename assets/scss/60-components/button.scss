@@ -42,12 +42,12 @@
   }
 
   &.button--small {
-    --button-padding: #{size(2)};
+    --button-padding: var(--space-2);
     --button-text-size: #{$text-sm};
   }
 
   &.button--large {
-    --button-padding: #{size(4)} #{size(6)};
+    --button-padding: var(--space-4) var(--space-6);
     --button-text-size: #{$text-lg};
   }
 }

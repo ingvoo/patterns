@@ -4,7 +4,7 @@
 
 .list-description {
   dt:not(:first-of-type) {
-    margin-top: size(4);
+    margin-top: var(--space-4);
   }
 
   /* stylelint-disable order/order */
@@ -19,7 +19,7 @@
     dt {
       float: left;
       width: 100px;
-      margin-bottom: size(2);
+      margin-bottom: var(--space-2);
 
       &:not(:first-of-type) {
         margin-top: 0;
@@ -27,8 +27,8 @@
     }
 
     dd {
-      margin-bottom: size(2);
-      margin-left: calc(100px + #{size(2)});
+      margin-bottom: var(--space-2);
+      margin-left: calc(100px + var(--space-2));
 
       &::after {
         content: '';

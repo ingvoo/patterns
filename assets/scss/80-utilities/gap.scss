@@ -3,21 +3,21 @@
 \*---------------------------------------- */
 
 .gap-4 {
-  grid-gap: size(4);
+  grid-gap: var(--space-4);
 }
 
 .gap-8 {
-  grid-gap: size(8);
+  grid-gap: var(--space-8);
 }
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
   @include screen($breakpoint-name) {
     .#{$breakpoint-name}\:gap-4 {
-      grid-gap: size(4);
+      grid-gap: var(--space-4);
     }
 
     .#{$breakpoint-name}\:gap-8 {
-      grid-gap: size(8);
+      grid-gap: var(--space-8);
     }
   }
 }

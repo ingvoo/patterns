@@ -3,16 +3,16 @@
 \*---------------------------------------- */
 
 .icon {
-  width: size(5);
-  height: size(5);
+  width: var(--space-5);
+  height: var(--space-5);
 }
 
 .icon--small {
-  width: size(4);
-  height: size(4);
+  width: var(--space-4);
+  height: var(--space-4);
 }
 
 .icon--large {
-  width: size(6);
-  height: size(6);
+  width: var(--space-6);
+  height: var(--space-6);
 }
