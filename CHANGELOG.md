@@ -1,3 +1,12 @@
+# [0.8.0](https://github.com/ingvijonasson/patterns/compare/0.7.0...0.8.0) (2022-04-03)
+
+
+### Features
+
+* add breakpoints tokens ([aa5aab6](https://github.com/ingvijonasson/patterns/commit/aa5aab6e9bba9abf7651fce9263445a4b542306c))
+* introduce color index documentation ([76cbcb0](https://github.com/ingvijonasson/patterns/commit/76cbcb0e8b5638d40d4fe7c030321c9332fb244f))
+* update sass version ([181d544](https://github.com/ingvijonasson/patterns/commit/181d544531ece16f8dba370ec165749701c3d299))
+
 # [0.7.0](https://github.com/ingvijonasson/patterns/compare/0.6.0...0.7.0) (2022-01-11)
 
 
