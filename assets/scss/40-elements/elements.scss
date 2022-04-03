@@ -45,12 +45,12 @@ p + p {
 }
 
 a {
-  color: var(--color-primary);
+  color: var(color-primary);
   transition: color 0.2s;
 
   &:hover,
   &:focus {
-    color: var(--color-primary-action);
+    color: var(color-primary-action);
     text-decoration: none;
   }
 
@@ -76,12 +76,9 @@ dt {
 }
 
 code {
-  background-color: var(--color-gray-100);
-  color: var(--color-primary);
-  font-size: text-sm;
-  font-weight: font-regular;
-  padding: var(--space-1) var(--space-2);
-  border-radius: $rounded;
+  color: var(--color-text);
+  font-size: $text-sm;
+  font-weight: $font-bold;
 }
 
 th,

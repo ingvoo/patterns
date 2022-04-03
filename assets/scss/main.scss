@@ -5,13 +5,14 @@
 /**
  * Tokens
  */
-@import '05-tokens/tokens';
+@import '00-tokens/tokens';
 
 /**
  * Settings
  */
 @import '10-settings/functions';
 @import '10-settings/settings';
+@import '10-settings/color-mapping';
 
 /**
  * Tools

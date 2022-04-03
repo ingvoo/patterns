@@ -1,26 +1,19 @@
 {
-  "color": {
-    "black": { "value": "hsl(0, 0%, 0%)" },
-    "gray-100": { "value": "hsl(0, 0%, 96%)" },
-    "gray-200": { "value": "hsl(0, 0%, 93%)" },
-    "gray-300": { "value": "hsl(0, 0%, 88%)" },
-    "gray-400": { "value": "hsl(0, 0%, 74%)" },
-    "gray-500": { "value": "hsl(0, 0%, 62%)" },
-    "gray-600": { "value": "hsl(0, 0%, 46%)" },
-    "gray-700": { "value": "hsl(0, 0%, 38%)" },
-    "gray-800": { "value": "hsl(0, 0%, 26%)" },
-    "gray-900": { "value": "hsl(0, 0%, 13%)" },
-    "blue-500": { "value": "hsl(207, 100%, 50%)" },
-    "blue-800": { "value": "hsl(207, 100%, 40%)" },
-    "white": { "value": "hsl(0, 0%, 100%)" },
-    "orange-500": { "value": "hsl(25, 100%, 50%)" },
-    "orange-800": { "value": "hsl(25, 100%, 40%)" },
-
-    "primary" : { "value": "{color.blue-500.value}" },
-    "primary-action": { "value": "{color.blue-800.value}" },
-    "secondary": { "value": "{color.orange-500.value}" },
-    "secondary-action": { "value": "{color.orange-800.value}" },
-    "text": { "value": "{color.gray-900.value}" },
-    "border": { "value": "{color.gray-400.value}" }
+  "colors": {
+    "color-black": { "value": "hsl(0, 0%, 0%)" },
+    "color-gray-100": { "value": "hsl(0, 0%, 96%)" },
+    "color-gray-200": { "value": "hsl(0, 0%, 93%)" },
+    "color-gray-300": { "value": "hsl(0, 0%, 88%)" },
+    "color-gray-400": { "value": "hsl(0, 0%, 74%)" },
+    "color-gray-500": { "value": "hsl(0, 0%, 62%)" },
+    "color-gray-600": { "value": "hsl(0, 0%, 46%)" },
+    "color-gray-700": { "value": "hsl(0, 0%, 38%)" },
+    "color-gray-800": { "value": "hsl(0, 0%, 26%)" },
+    "color-gray-900": { "value": "hsl(0, 0%, 13%)" },
+    "color-blue-500": { "value": "hsl(207, 100%, 50%)" },
+    "color-blue-800": { "value": "hsl(207, 100%, 40%)" },
+    "color-white": { "value": "hsl(0, 0%, 100%)" },
+    "color-orange-500": { "value": "hsl(25, 100%, 50%)" },
+    "color-orange-800": { "value": "hsl(25, 100%, 40%)" }
   }
 }
