@@ -2,9 +2,14 @@
   LIST
 \*---------------------------------------- */
 
-.list {
+.list-reset,
+%list-reset {
   padding-left: 0;
   list-style-type: none;
+}
+
+.list {
+  @extend %list-reset;
 
   li {
     padding-top: var(--space-2);

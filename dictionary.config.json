@@ -5,8 +5,9 @@
       "transforms": ["color/hsl", "size/rem"],
       "transformGroup": "scss",
       "files": [{
-        "destination": "assets/scss/05-tokens/tokens.scss",
+        "destination": "assets/scss/00-tokens/tokens.scss",
         "format": "css/variables",
+        "mapName": "tokens",
         "options": {
           "outputReferences": true
         }
