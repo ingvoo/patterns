@@ -18,7 +18,7 @@ Prerequisites: [Node.js](https://nodejs.org/en/) >= 10, <= 12
 Inside the directory of your choice, install a copy of the starterkit with:
 
 ```bash
-curl -L https://github.com/ingvijonasson/patterns/archive/master.tar.gz | tar zx --strip 1
+curl -L https://github.com/ingvoo/patterns/archive/master.tar.gz | tar zx --strip 1
 ```
 
 Then install the npm dependencies with:
