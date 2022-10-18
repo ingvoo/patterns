@@ -4,6 +4,8 @@
 \*---------------------------------------- */
 
 .flow > * + * {
+  --flow-space: #{$space-4};
+
   margin-top: var(--flow-space) !important;
 }
 
