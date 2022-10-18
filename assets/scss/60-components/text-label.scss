@@ -2,8 +2,9 @@
   Text label
 \*---------------------------------------- */
 
-.text-label {
+.text-label,
+%text-label {
   display: block;
-  padding-bottom: var(--space-1);
+  padding-bottom: $space-1;
   font-weight: $font-bold;
 }

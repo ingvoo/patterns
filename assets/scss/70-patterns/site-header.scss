@@ -3,13 +3,12 @@
 \*---------------------------------------- */
 
 .site-header {
-  padding-top: var(--space-6);
-  padding-bottom: var(--space-6);
-  color: var(--white);
+  padding-top: $space-6;
+  padding-bottom: $space-6;
+  color: $color-white;
   background-color: var(--color-primary);
 }
 
 .site-header__title {
-  margin: 0;
-  font-size: 1.4rem;
+  @include text-h4;
 }

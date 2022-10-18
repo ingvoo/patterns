@@ -2,35 +2,35 @@
   MARGIN
 \*---------------------------------------- */
 
-@each $space-name, $space-value in $spaces {
-  .m-#{$space-name} {
+@each $space-name, $space-value in map-get($tokens, space) {
+  $name: str_slice($space-name, 7);
+
+  .m-#{$name} {
     margin: $space-value;
   }
 
-  .mt-#{$space-name} {
+  .mt-#{$name} {
     margin-top: $space-value;
   }
 
-  .mb-#{$space-name} {
+  .mb-#{$name} {
     margin-bottom: $space-value;
   }
 
-  .mr-#{$space-name} {
+  .mr-#{$name} {
     margin-right: $space-value;
   }
 
-  .ml-#{$space-name} {
+  .ml-#{$name} {
     margin-left: $space-value;
   }
 
-  .mx-#{$space-name} {
-    margin-left: $space-value;
-    margin-right: $space-value;
+  .mx-#{$name} {
+    margin-inline: $space-value;
   }
 
-  .my-#{$space-name} {
-    margin-top: $space-value;
-    margin-bottom: $space-value;
+  .my-#{$name} {
+    margin-block: $space-value;
   }
 }
 
@@ -43,54 +43,52 @@
 }
 
 .mx-auto {
-  margin-right: auto;
-  margin-left: auto;
+  margin-inline: auto;
 }
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
   @include screen($breakpoint-name) {
-    .#{$breakpoint-name}ml-auto {
+    .#{$breakpoint-name}\:ml-auto {
       margin-left: auto;
     }
 
-    .#{$breakpoint-name}mr-auto {
+    .#{$breakpoint-name}\:mr-auto {
       margin-right: auto;
     }
 
-    .#{$breakpoint-name}mx-auto {
-      margin-right: auto;
-      margin-left: auto;
+    .#{$breakpoint-name}\:mx-auto {
+      margin-inline: auto;
     }
 
-    @each $space-name, $space-value in $spaces {
-      .#{$breakpoint-name}\:m-#{$space-name} {
+    @each $name, $space-value in map-get($tokens, space) {
+      $name: str_slice($name, 7);
+
+      .#{$breakpoint-name}\:m-#{$name} {
         margin: $space-value;
       }
 
-      .#{$breakpoint-name}\:mt-#{$space-name} {
+      .#{$breakpoint-name}\:mt-#{$name} {
         margin-top: $space-value;
       }
 
-      .#{$breakpoint-name}\:mb-#{$space-name} {
+      .#{$breakpoint-name}\:mb-#{$name} {
         margin-bottom: $space-value;
       }
 
-      .#{$breakpoint-name}\:mr-#{$space-name} {
+      .#{$breakpoint-name}\:mr-#{$name} {
         margin-right: $space-value;
       }
 
-      .#{$breakpoint-name}\:ml-#{$space-name} {
+      .#{$breakpoint-name}\:ml-#{$name} {
         margin-left: $space-value;
       }
 
-      .#{$breakpoint-name}\:mx-#{$space-name} {
-        margin-left: $space-value;
-        margin-right: $space-value;
+      .#{$breakpoint-name}\:mx-#{$name} {
+        margin-inline: $space-value;
       }
 
-      .#{$breakpoint-name}\:my-#{$space-name} {
-        margin-top: $space-value;
-        margin-bottom: $space-value;
+      .#{$breakpoint-name}\:my-#{$name} {
+        margin-block: $space-value;
       }
     }
   }

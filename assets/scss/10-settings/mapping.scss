@@ -1,0 +1,17 @@
+/* ----------------------------------------*\
+  Color mapping
+\*---------------------------------------- */
+
+:root {
+  --color-primary: #{$color-blue-500};
+  --color-primary-action: #{$color-blue-800};
+  --color-secondary: #{$color-orange-500};
+  --color-secondary-action: #{$color-orange-800};
+  --color-text: #{$color-gray-900};
+  --color-border: #{$color-gray-400};
+
+  --container-gap: #{$space-4};
+  --container-width: 1480px;
+
+  --flow-space: #{$space-4};
+}

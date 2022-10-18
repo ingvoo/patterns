@@ -1,0 +1,52 @@
+/* ----------------------------------------*\
+  LIST INLINE
+\*---------------------------------------- */
+
+.list-inline {
+  @extend %list-reset;
+
+  --space-inline: #{$space-2};
+  --border-inline: 0;
+
+  display: flex;
+
+  > li {
+    padding-inline: var(--space-inline);
+
+    &:first-child {
+      padding-inline-start: 0
+    }
+
+    &:last-child {
+      padding-inline-end: 0
+    }
+
+    & + li {
+      border-width: var(--border-inline);
+    }
+  }
+}
+
+.list-inline--tiny {
+  --space-inline: 0;
+}
+
+.list-inline--small {
+  --space-inline: #{$space-1};
+}
+
+.list-inline--large {
+  --space-inline: #{$space-4};
+}
+
+.list-inline--xlarge {
+  --space-inline: #{$space-8};
+}
+
+.list-inline--2xlarge {
+  --space-inline: #{$space-16};
+}
+
+.list-inline--divided {
+  --border-inline: 1px
+}

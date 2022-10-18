@@ -8,12 +8,15 @@
   list-style-type: none;
 }
 
-.list {
+.list,
+%list {
   @extend %list-reset;
 
-  li {
-    padding-top: var(--space-2);
-    padding-bottom: var(--space-2);
+  --space-block: #{$space-2};
+  --border-block: 0;
+
+  > li {
+    padding-block: var(--space-block);
 
     &:first-child {
       padding-top: 0;
@@ -22,31 +25,33 @@
     &:last-child {
       padding-bottom: 0;
     }
+
+    & + li {
+      border-top-width: var(--border-block);
+    }
   }
 }
 
-.list--large li {
-  padding-top: var(--space-4);
-  padding-bottom: var(--space-4);
+.list--tiny {
+  --space-block: 0
 }
 
-/* ----------------------------------------*\
-  LIST INLINE
-\*---------------------------------------- */
-
-.list-inline {
-  list-style-type: none;
-  display: flex;
-  flex-flow: row wrap;
-
-  li + li {
-    margin-left: var(--space-4);
-  }
+.list--small {
+  --space-block: #{$space-1};
 }
 
-.list-inline--large li + li {
-  margin-left: var(--space-8);
+.list--large {
+  --space-block: #{$space-4};
 }
+
+.list--divided {
+  --border-block: 1px;
+}
+
+.list--divided-none {
+  --border-block: 0;
+}
+
 
 /* ----------------------------------------*\
   LIST DASH
@@ -58,6 +63,6 @@
   &::before {
     content: '\2014';
     display: block;
-    margin-right: var(--space-4);
+    margin-right: $space-4;
   }
 }

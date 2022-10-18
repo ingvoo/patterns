@@ -1,0 +1,16 @@
+/* ----------------------------------------*\
+  Flow
+  https://piccalil.li/quick-tip/flow-utility/
+\*---------------------------------------- */
+
+.flow > * + * {
+  margin-top: var(--flow-space) !important;
+}
+
+.flow--small {
+  --flow-space: #{$space-2};
+}
+
+.flow--large {
+  --flow-space: #{$space-8};
+}
