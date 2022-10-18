@@ -1,3 +1,12 @@
+# [0.9.0](https://github.com/ingvijonasson/patterns/compare/0.8.0...0.9.0) (2022-10-18)
+
+
+### Features
+
+* add typography and more missing basic design tokens ([b0b0081](https://github.com/ingvijonasson/patterns/commit/b0b0081dd11b0bfaf3609b366756c6e446e171f3))
+* introduce typography mixings ([614f13d](https://github.com/ingvijonasson/patterns/commit/614f13dc9b45c46e7bed2214708e0f5113a16858))
+* use scss variables in favor of custom properties for theming ([d4d02a4](https://github.com/ingvijonasson/patterns/commit/d4d02a4f8547228ba0f2018d7fe8caffc319ca42))
+
 # [0.8.0](https://github.com/ingvijonasson/patterns/compare/0.7.0...0.8.0) (2022-04-03)
 
 
