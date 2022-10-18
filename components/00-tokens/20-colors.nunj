@@ -1,0 +1,43 @@
+<section>
+  <div class="container">
+    <h1>Colors</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>SCSS variable</th>
+          <th>Value</th>
+          <th>Color</th>
+        </tr>
+      </thead>
+      <tbody id="colors"></tbody>
+    </table>
+  </div>
+</section>
+
+<script>
+
+  const tokens = fetch('/tokens.json')
+    .then((res) => res.json())
+    .then((json) => generate(json.colors, document.querySelector('#colors')));
+
+    function generate(items, selector) {
+    for (const key in items) {
+      let row = document.createElement('tr');
+
+      let label = document.createElement('td');
+      label.innerHTML = `$${key}`;
+      row.appendChild(label);
+
+      let value = document.createElement('td');
+      value.innerHTML = items[key]
+      row.appendChild(value);
+
+      let color = document.createElement('td');
+      color.style.backgroundColor = `${items[key]}`;
+      color.classList.add('p-6');
+      row.appendChild(color);
+
+      selector.appendChild(row);
+    }
+  }
+</script>

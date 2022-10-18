@@ -1,0 +1,53 @@
+<section>
+  <div class="container">
+    <h1>Typography</h1>
+
+    <h2>Text Sizes</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>SCSS variable</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody id="text-sizes"></tbody>
+    </table>
+
+    <h2>Font Weights</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>SCSS variable</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody id="font-weights"></tbody>
+    </table>
+  </div>
+</section>
+
+<script>
+  fetch('/tokens.json')
+    .then((res) => res.json())
+    .then((json) => {
+      generate(json.fontWeights, document.querySelector('#font-weights'))
+      generate(json.textSizes, document.querySelector('#text-sizes'))
+    });
+
+
+  function generate(items, selector) {
+    for (const key in items) {
+      let row = document.createElement('tr');
+
+      let label = document.createElement('td');
+      label.innerHTML = `$${key}`;
+      row.appendChild(label);
+
+      let value = document.createElement('td');
+      value.innerHTML = items[key]
+      row.appendChild(value);
+
+      selector.appendChild(row);
+    }
+  }
+</script>

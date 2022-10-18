@@ -1,0 +1,39 @@
+<section>
+  <div class="container">
+    <h1>Spaces</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>SCSS variable</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody id="spaces"></tbody>
+    </table>
+    </div>
+</section>
+
+<script>
+  fetch('/tokens.json')
+    .then((res) => res.json())
+    .then((json) => {
+      generate(json.space, document.querySelector('#spaces'))
+    });
+
+
+  function generate(items, selector) {
+    for (const key in items) {
+      let row = document.createElement('tr');
+
+      let label = document.createElement('td');
+      label.innerHTML = `$${key}`;
+      row.appendChild(label);
+
+      let value = document.createElement('td');
+      value.innerHTML = items[key]
+      row.appendChild(value);
+
+      selector.appendChild(row);
+    }
+  }
+</script>

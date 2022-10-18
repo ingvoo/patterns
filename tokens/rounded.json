@@ -1,0 +1,9 @@
+{
+  "rounded": {
+    "rounded-sm": { "value": "0.125rem" },
+    "rounded": { "value": "0.25rem" },
+    "rounded-md": { "value": "0.375rem" },
+    "rounded-lg": { "value": "0.5rem" },
+    "rounded-full": { "value": "50%" }
+  }
+}

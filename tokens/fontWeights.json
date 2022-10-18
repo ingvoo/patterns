@@ -1,0 +1,8 @@
+{
+  "fontWeights": {
+    "font-light": { "value": "300" },
+    "font-regular": { "value": "400" },
+    "font-medium": { "value": "500" },
+    "font-bold": { "value": "700" }
+  }
+}
