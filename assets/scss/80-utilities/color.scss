@@ -3,11 +3,11 @@
 \*---------------------------------------- */
 
 .text-white {
-  color: var(--color-white);
+  color: $color-white;
 }
 
 .text-black {
-  color: var(--color-black);
+  color: $color-black;
 }
 
 .text-primary {
@@ -22,11 +22,11 @@
 * Background
 */
 .bg-white {
-  background-color: var(--color-white);
+  background-color: $color-white;
 }
 
 .bg-black {
-  background-color: var(--color-black);
+  background-color: $color-black;
 }
 
 .bg-primary {
@@ -41,11 +41,11 @@
 * Border
 */
 .border-white {
-  border-color: var(--color-white);
+  border-color: $color-white;
 }
 
 .border-black {
-  border-color: var(--color-black);
+  border-color: $color-black;
 }
 
 .border-primary {
@@ -54,8 +54,4 @@
 
 .border-secondary {
   border-color: var(--color-secondary);
-}
-
-.border-gray-300 {
-  border-color: var(--color-gray-300);
 }

@@ -3,9 +3,10 @@
 \*---------------------------------------- */
 
 :root {
-  --button-padding: var(--space-3) var(--space-4);
+  --button-padding: #{$space-3} #{$space-4};
   --button-text-size: #{$font-base};
-  --button-text: var(--color-white);
+  --button-text: #{$color-white};
+  --button-text-action: #{$color-white};
   --button-bg: var(--color-primary);
   --button-bg-action: var(--color-primary-action);
 }
@@ -22,6 +23,7 @@
   text-align: center;
   color: var(--button-text);
   font-size: var(--button-text-size);
+  font-weight: $font-bold;
   line-height: 1;
 
   background-color: var(--button-bg);
@@ -30,10 +32,21 @@
   vertical-align: middle;
   transition: background-color $duration-250;
   cursor: pointer;
+  white-space: nowrap;
 
-  &:hover,
-  &:focus {
-    background-color: var(--button-bg-action);
+  &:disabled {
+    color: var(--button-text-disabled);
+    background-color: var(--button-bg-disabled);
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+
+  &:not([disabled]) {
+    &:hover,
+    &:focus {
+      color: var(--button-text-action);
+      background-color: var(--button-bg-action);
+    }
   }
 
   &.button--secondary {
@@ -42,12 +55,12 @@
   }
 
   &.button--small {
-    --button-padding: var(--space-2);
+    --button-padding: #{$space-2};
     --button-text-size: #{$text-sm};
   }
 
   &.button--large {
-    --button-padding: var(--space-4) var(--space-6);
+    --button-padding: #{$space-4} #{$space-6};
     --button-text-size: #{$text-lg};
   }
 }

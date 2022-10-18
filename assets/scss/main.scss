@@ -8,34 +8,25 @@
 @import '00-tokens/tokens';
 
 /**
- * Settings
+ * Settings and tools
  */
 @import '10-settings/functions';
 @import '10-settings/settings';
-@import '10-settings/color-mapping';
-
-/**
- * Tools
- */
+@import '10-settings/mapping';
 @import '20-tools/mixins';
 
 /**
- * Generic
+ * Reset and base
  */
 @import '30-generic/reset';
-@import '30-generic/box-sizing';
-
-/**
- * Elements
- */
 @import '40-elements/base';
-@import '40-elements/elements';
 
 /**
  * Objects
  */
 @import '50-objects/container';
 @import '50-objects/embed';
+@import '50-objects/flow';
 @import '50-objects/master';
 
 /**
@@ -47,6 +38,7 @@
 @import '60-components/form-control';
 @import '60-components/icon';
 @import '60-components/list';
+@import '60-components/list-inline';
 @import '60-components/list-description';
 @import '60-components/text-label';
 
@@ -60,7 +52,6 @@
  * Utilities
  */
 @import '80-utilities/color';
-@import '80-utilities/columns';
 
 // Box Model
 @import '80-utilities/display';
@@ -74,17 +65,16 @@
 @import '80-utilities/position';
 @import '80-utilities/z-index';
 
-// Grid
+// Layout
 @import '80-utilities/gap';
 @import '80-utilities/grid-col';
 @import '80-utilities/grid-cols';
 @import '80-utilities/grid-row';
 @import '80-utilities/grid-rows';
-
-// Flex
 @import '80-utilities/flex';
 @import '80-utilities/flex-items';
 @import '80-utilities/flex-justify';
+@import '80-utilities/columns';
 
 // Typography
 @import '80-utilities/text-align';

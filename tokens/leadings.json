@@ -1,0 +1,11 @@
+{
+  "leadings": {
+    "leading-none": { "value": "1" },
+    "leading-small": { "value": "1.1" },
+    "leading-tight": { "value": "1.25" },
+    "leading-snug": { "value": "1.375" },
+    "leading-normal": { "value": "1.5" },
+    "leading-relaxed": { "value": "1.625" },
+    "leading-loose": { "value": "2" }
+  }
+}

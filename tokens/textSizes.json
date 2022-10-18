@@ -1,0 +1,16 @@
+{
+  "textSizes": {
+    "text-xs": { "value": "0.75rem", "comment": "12px" },
+    "text-sm": { "value": "0.875rem", "comment": "14px" },
+    "text-base": { "value": "1rem", "comment": "16px" },
+    "text-lg": { "value": "1.125rem", "comment": "18px" },
+    "text-xl": { "value": "1.25rem", "comment": "20px" },
+    "text-2xl": { "value": "1.5625rem" , "comment": "25px"},
+    "text-3xl": { "value": "1.875rem" , "comment": "30px"},
+    "text-4xl": { "value": "2.1875rem", "comment": "35px" },
+    "text-5xl": { "value": "2.5rem", "comment": "40px" },
+    "text-6xl": { "value": "3.125rem", "comment": "50px" },
+    "text-7xl": { "value": "3.4375rem", "comment": "55px" },
+    "text-8xl": { "value": "3.75rem", "comment": "60px"}
+  }
+}

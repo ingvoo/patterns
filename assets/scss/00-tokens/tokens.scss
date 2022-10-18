@@ -1,38 +1,161 @@
+
 /**
  * Do not edit directly
- * Generated on Sun, 03 Apr 2022 11:53:55 GMT
+ * Generated on Tue, 18 Oct 2022 08:38:18 GMT
  */
 
-:root {
-  --space-64: 16rem;
-  --space-48: 12rem;
-  --space-32: 8rem;
-  --space-24: 6rem;
-  --space-20: 5rem;
-  --space-16: 4rem;
-  --space-12: 3rem;
-  --space-10: 2.5rem;
-  --space-8: 2rem;
-  --space-6: 1.5rem;
-  --space-5: 1.25rem;
-  --space-4: 1rem;
-  --space-3: 0.75rem;
-  --space-2: 0.5rem;
-  --space-1: 0.25rem;
-  --space-0: 0;
-  --color-orange-800: hsl(25, 100%, 40%);
-  --color-orange-500: hsl(25, 100%, 50%);
-  --color-white: hsl(0, 0%, 100%);
-  --color-blue-800: hsl(207, 100%, 40%);
-  --color-blue-500: hsl(207, 100%, 50%);
-  --color-gray-900: hsl(0, 0%, 13%);
-  --color-gray-800: hsl(0, 0%, 26%);
-  --color-gray-700: hsl(0, 0%, 38%);
-  --color-gray-600: hsl(0, 0%, 46%);
-  --color-gray-500: hsl(0, 0%, 62%);
-  --color-gray-400: hsl(0, 0%, 74%);
-  --color-gray-300: hsl(0, 0%, 88%);
-  --color-gray-200: hsl(0, 0%, 93%);
-  --color-gray-100: hsl(0, 0%, 96%);
-  --color-black: hsl(0, 0%, 0%);
-}
+$text-8xl: 3.75rem !default; // 60px
+$text-7xl: 3.4375rem !default; // 55px
+$text-6xl: 3.125rem !default; // 50px
+$text-5xl: 2.5rem !default; // 40px
+$text-4xl: 2.1875rem !default; // 35px
+$text-3xl: 1.875rem !default; // 30px
+$text-2xl: 1.5625rem !default; // 25px
+$text-xl: 1.25rem !default; // 20px
+$text-lg: 1.125rem !default; // 18px
+$text-base: 1rem !default; // 16px
+$text-sm: 0.875rem !default; // 14px
+$text-xs: 0.75rem !default; // 12px
+$space-64: 16rem !default;
+$space-48: 12rem !default;
+$space-32: 8rem !default;
+$space-24: 6rem !default;
+$space-20: 5rem !default;
+$space-16: 4rem !default;
+$space-12: 3rem !default;
+$space-10: 2.5rem !default;
+$space-8: 2rem !default;
+$space-6: 1.5rem !default;
+$space-5: 1.25rem !default;
+$space-4: 1rem !default;
+$space-3: 0.75rem !default;
+$space-2: 0.5rem !default;
+$space-1: 0.25rem !default;
+$space-0: 0 !default;
+$shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1) !default;
+$shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) !default;
+$shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1) !default;
+$shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05) !default;
+$shadow-none: none !default;
+$rounded-full: 50% !default;
+$rounded-lg: 0.5rem !default;
+$rounded-md: 0.375rem !default;
+$rounded: 0.25rem !default;
+$rounded-sm: 0.125rem !default;
+$leading-loose: 2 !default;
+$leading-relaxed: 1.625 !default;
+$leading-normal: 1.5 !default;
+$leading-snug: 1.375 !default;
+$leading-tight: 1.25 !default;
+$leading-small: 1.1 !default;
+$leading-none: 1 !default;
+$font-bold: 700 !default;
+$font-medium: 500 !default;
+$font-regular: 400 !default;
+$font-light: 300 !default;
+$duration-500: 500ms !default;
+$duration-350: 350ms !default;
+$duration-250: 250ms !default;
+$duration-150: 150ms !default;
+$color-orange-800: hsl(25, 100%, 40%) !default;
+$color-orange-500: hsl(25, 100%, 50%) !default;
+$color-white: hsl(0, 0%, 100%) !default;
+$color-blue-800: hsl(207, 100%, 40%) !default;
+$color-blue-500: hsl(207, 100%, 50%) !default;
+$color-gray-900: hsl(0, 0%, 13%) !default;
+$color-gray-800: hsl(0, 0%, 26%) !default;
+$color-gray-700: hsl(0, 0%, 38%) !default;
+$color-gray-600: hsl(0, 0%, 46%) !default;
+$color-gray-500: hsl(0, 0%, 62%) !default;
+$color-gray-400: hsl(0, 0%, 74%) !default;
+$color-gray-300: hsl(0, 0%, 88%) !default;
+$color-gray-200: hsl(0, 0%, 93%) !default;
+$color-gray-100: hsl(0, 0%, 96%) !default;
+$color-black: hsl(0, 0%, 0%) !default;
+
+$tokens: (
+  'colors': (
+    'color-black': $color-black,
+    'color-gray-100': $color-gray-100,
+    'color-gray-200': $color-gray-200,
+    'color-gray-300': $color-gray-300,
+    'color-gray-400': $color-gray-400,
+    'color-gray-500': $color-gray-500,
+    'color-gray-600': $color-gray-600,
+    'color-gray-700': $color-gray-700,
+    'color-gray-800': $color-gray-800,
+    'color-gray-900': $color-gray-900,
+    'color-blue-500': $color-blue-500,
+    'color-blue-800': $color-blue-800,
+    'color-white': $color-white,
+    'color-orange-500': $color-orange-500,
+    'color-orange-800': $color-orange-800
+  ),
+  'durations': (
+    'duration-150': $duration-150,
+    'duration-250': $duration-250,
+    'duration-350': $duration-350,
+    'duration-500': $duration-500
+  ),
+  'fontWeights': (
+    'font-light': $font-light,
+    'font-regular': $font-regular,
+    'font-medium': $font-medium,
+    'font-bold': $font-bold
+  ),
+  'leadings': (
+    'leading-none': $leading-none,
+    'leading-small': $leading-small,
+    'leading-tight': $leading-tight,
+    'leading-snug': $leading-snug,
+    'leading-normal': $leading-normal,
+    'leading-relaxed': $leading-relaxed,
+    'leading-loose': $leading-loose
+  ),
+  'rounded': (
+    'rounded-sm': $rounded-sm,
+    'rounded': $rounded,
+    'rounded-md': $rounded-md,
+    'rounded-lg': $rounded-lg,
+    'rounded-full': $rounded-full
+  ),
+  'shadows': (
+    'shadow-none': $shadow-none,
+    'shadow-sm': $shadow-sm,
+    'shadow': $shadow,
+    'shadow-md': $shadow-md,
+    'shadow-lg': $shadow-lg
+  ),
+  'space': (
+    'space-0': $space-0,
+    'space-1': $space-1,
+    'space-2': $space-2,
+    'space-3': $space-3,
+    'space-4': $space-4,
+    'space-5': $space-5,
+    'space-6': $space-6,
+    'space-8': $space-8,
+    'space-10': $space-10,
+    'space-12': $space-12,
+    'space-16': $space-16,
+    'space-20': $space-20,
+    'space-24': $space-24,
+    'space-32': $space-32,
+    'space-48': $space-48,
+    'space-64': $space-64
+  ),
+  'textSizes': (
+    'text-xs': $text-xs,
+    'text-sm': $text-sm,
+    'text-base': $text-base,
+    'text-lg': $text-lg,
+    'text-xl': $text-xl,
+    'text-2xl': $text-2xl,
+    'text-3xl': $text-3xl,
+    'text-4xl': $text-4xl,
+    'text-5xl': $text-5xl,
+    'text-6xl': $text-6xl,
+    'text-7xl': $text-7xl,
+    'text-8xl': $text-8xl
+  )
+);

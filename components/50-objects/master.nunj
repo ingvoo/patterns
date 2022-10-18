@@ -2,9 +2,9 @@
   <div class="master__content">
     <h1>This is the master</h1>
     <p>Master is a site wrapper and it provides minimal styling for achiving a
-      sticky footer 👇</p>
+      sticky footer</p>
   </div>
   <div class="master__footer">
-    <p>The footer 🤙</p>
+    <p>The footer</p>
   </div>
 </div>

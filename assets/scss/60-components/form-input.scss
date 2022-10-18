@@ -4,7 +4,7 @@
 
 .form-input {
   @include placeholder-color(var(--color-text));
-  padding: var(--space-2) var(--space-3);
+  padding: $space-2 $space-3;
   width: 100%;
 
   line-height: 1.5;
@@ -13,5 +13,5 @@
   border-width: 1px;
   border-radius: $rounded;
   appearance: none;
-  background-color: var(--color-white);
+  background-color: $color-white;
 }

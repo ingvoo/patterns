@@ -44,6 +44,12 @@
   outline: dotted 3px $color;
 }
 
+@mixin disabled {
+  background-color: $color-gray-100;
+  border-color: $color-gray-150;
+  cursor: not-allowed;
+}
+
 /**
  * Placeholder color
  */
@@ -63,4 +69,48 @@
   &:-ms-input-placeholder {
     color: $color;
   }
+}
+
+/**
+* Typography
+*/
+
+@mixin text-heading {
+  font-weight: $font-bold;
+  line-height: $leading-small;
+}
+
+@mixin text-h1 {
+  @include text-heading;
+  font-size: $text-5xl;
+}
+
+@mixin text-h2 {
+  @include text-heading;
+  font-size: $text-4xl;
+}
+
+@mixin text-h3 {
+  @include text-heading;
+  font-size: $text-3xl;
+}
+
+@mixin text-h4 {
+  @include text-heading;
+  font-size: $text-2xl;
+}
+
+@mixin text-h5 {
+  @include text-heading;
+  font-size: $text-xl;
+}
+
+@mixin text-h6 {
+  @include text-heading;
+  font-size: $text-lg;
+}
+
+@mixin text-base {
+  font-size: $text-base;
+  line-height: $leading-normal;
 }

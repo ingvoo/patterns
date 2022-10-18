@@ -2,69 +2,69 @@
   PADDING
 \*---------------------------------------- */
 
-@each $space-name, $space-value in $spaces {
-  .p-#{$space-name} {
+@each $space-name, $space-value in map-get($tokens, space) {
+  $name: str_slice($space-name, 7);
+
+  .p-#{$name} {
     padding: $space-value;
   }
 
-  .pt-#{$space-name} {
+  .pt-#{$name} {
     padding-top: $space-value;
   }
 
-  .pb-#{$space-name} {
+  .pb-#{$name} {
     padding-bottom: $space-value;
   }
 
-  .pr-#{$space-name} {
+  .pr-#{$name} {
     padding-right: $space-value;
   }
 
-  .pl-#{$space-name} {
+  .pl-#{$name} {
     padding-left: $space-value;
   }
 
-  .px-#{$space-name} {
-    padding-left: $space-value;
-    padding-right: $space-value;
+  .px-#{$name} {
+    padding-inline: $space-value;
   }
 
-  .py-#{$space-name} {
-    padding-top: $space-value;
-    padding-bottom: $space-value;
+  .py-#{$name} {
+    padding-block: $space-value;
   }
 }
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
   @include screen($breakpoint-name) {
-    @each $space-name, $space-value in $spaces {
-      .#{$breakpoint-name}\:p-#{$space-name} {
+    @each $space-name, $space-value in map-get($tokens, space) {
+      $name: str_slice($space-name, 7);
+
+      .#{$breakpoint-name}\:p-#{$name} {
         padding: $space-value;
       }
 
-      .#{$breakpoint-name}\:pt-#{$space-name} {
+      .#{$breakpoint-name}\:pt-#{$name} {
         padding-top: $space-value;
       }
 
-      .#{$breakpoint-name}\:pb-#{$space-name} {
+      .#{$breakpoint-name}\:pb-#{$name} {
         padding-bottom: $space-value;
       }
 
-      .#{$breakpoint-name}\:pr-#{$space-name} {
+      .#{$breakpoint-name}\:pr-#{$name} {
         padding-right: $space-value;
       }
 
-      .#{$breakpoint-name}\:pl-#{$space-name} {
+      .#{$breakpoint-name}\:pl-#{$name} {
         padding-left: $space-value;
       }
 
-      .#{$breakpoint-name}\:px-#{$space-name} {
-        padding-left: $space-value;
-        padding-right: $space-value;
+      .#{$breakpoint-name}\:px-#{$name} {
+        padding-inline: $space-value;
       }
 
-      .#{$breakpoint-name}\:py-#{$space-name} {
-        padding-top: $space-value;
-        padding-bottom: $space-value;
+      .#{$breakpoint-name}\:py-#{$name} {
+        padding-block: $space-value;
       }
     }
   }

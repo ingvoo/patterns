@@ -1,0 +1,53 @@
+<section>
+  <div class="container">
+    <h1>Miscellaneous</h1>
+
+    <h2>Duration</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>SCSS variable</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody id="durations"></tbody>
+    </table>
+
+    <h2 class="mt-8">Rounded</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>SCSS variable</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody id="rounded"></tbody>
+    </table>
+  </div>
+</section>
+
+<script>
+  fetch('/tokens.json')
+    .then((res) => res.json())
+    .then((json) => {
+      generate(json.durations, document.querySelector('#durations'))
+      generate(json.rounded, document.querySelector('#rounded'))
+    });
+
+
+  function generate(items, selector) {
+    for (const key in items) {
+      let row = document.createElement('tr');
+
+      let label = document.createElement('td');
+      label.innerHTML = `$${key}`;
+      row.appendChild(label);
+
+      let value = document.createElement('td');
+      value.innerHTML = items[key]
+      row.appendChild(value);
+
+      selector.appendChild(row);
+    }
+  }
+</script>

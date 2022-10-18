@@ -6,7 +6,7 @@
       "transformGroup": "scss",
       "files": [{
         "destination": "assets/scss/00-tokens/tokens.scss",
-        "format": "css/variables",
+        "format": "scss/map-deep",
         "mapName": "tokens",
         "options": {
           "outputReferences": true

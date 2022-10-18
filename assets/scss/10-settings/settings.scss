@@ -11,38 +11,7 @@ $breakpoints: (
   xl: 1280px,
 );
 
-$spaces: (
-  0: 0,
-  1: 0.25rem,
-  2: 0.5rem,
-  3: 0.75rem,
-  4: 1rem,
-  5: 1.25rem,
-  6: 1.5rem,
-  7: 1.75rem,
-  8: 2rem,
-  10: 2.5rem,
-  12: 3rem,
-  14: 3.5rem,
-  16: 4rem,
-  20: 5rem,
-  24: 6rem,
-  32: 8rem,
-  48: 12rem,
-  64: 16rem,
-);
-
-/**
- * Border radius
- */
-$rounded-sm: 0.125rem;
-$rounded: 0.25rem;
-$rounded-md: 0.375rem;
-
-/**
-* Max Widths
-*/
-$max-w-6xl: 72rem;
+$grid-columns: (1, 2, 3, 4, auto);
 
 /**
 * Typography
@@ -50,30 +19,6 @@ $max-w-6xl: 72rem;
 $font-base: 16px;
 $font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
   'Helvetica Neue', Arial, sans-serif;
-
-$font-light: 300;
-$font-regular: 400;
-$font-medium: 500;
-$font-bold: 700;
-
-$leading-none: 0;
-$leading-tight: 1.25;
-$leading-snug: 1.375;
-$leading-normal: 1.5;
-$leading-relaxed: 1.625;
-$leading-loose: 2;
-
-$text-sm: 0.85rem;
-$text-base: 1rem;
-$text-lg: 1.25rem;
-
-/**
- * Duration
- */
-$duration-150: 150ms;
-$duration-250: 250ms;
-$duration-400: 400ms;
-$duration-500: 500ms;
 
 /**
 * Z-Index
