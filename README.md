@@ -5,6 +5,7 @@ A starterkit to create web styleguides with [Fractal](http://fractal.build/) and
 - Fractal pre-configured with [Nunjucks](https://mozilla.github.io/nunjucks/)
 - JavaScript bundling with Webpack and [Babel](http://babeljs.io/)
 - Sass compilation, including [Autoprefixer](https://github.com/postcss/autoprefixer)
+- Manage design tokens with [Style Dictonary](https://amzn.github.io/style-dictionary/#/README)
 - [SVG icons sprite](https://css-tricks.com/svg-symbol-good-choice-icons/) generation
 - Live reload (with hot module replacement) for comfortable development
 - Automated release management with [release-it](https://github.com/webpro/release-it)
