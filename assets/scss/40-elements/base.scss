@@ -2,6 +2,13 @@
   BASE
 \*---------------------------------------- */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  border: 0 solid var(--color-border);
+}
+
 html,
 body {
   height: 100%;
@@ -12,6 +19,132 @@ html {
   font-size: $font-base;
   font-weight: $font-regular;
   line-height: $leading-normal;
-  color: var(color-text);
-  background-color: var(--color-white);
+  color: var(--color-text);
+  background-color: $color-white;
+
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.75em 0 1.05em;
+}
+
+h1 {
+  @include text-h1;
+}
+
+h2 {
+  @include text-h2;
+}
+
+h3 {
+  @include text-h3;
+}
+
+h4 {
+  @include text-h4;
+}
+
+h5 {
+  @include text-h5;
+}
+
+h6 {
+  @include text-h6;
+}
+
+p,
+li,
+dt,
+dd,
+td,
+th {
+  @include text-base;
+}
+
+small {
+  font-size: $text-sm;
+}
+
+strong {
+  font-weight: $font-bold;
+}
+
+mark {
+  background-color: inherit;
+}
+
+label,
+legend {
+  @extend %text-label;
+}
+
+legend {
+  display: block;
+}
+
+dfn {
+  color: var(--color-primary);
+  font-style: normal;
+}
+
+p + p {
+  margin-top: $space-4;
+}
+
+a {
+  color: var(--color-primary);
+  transition: color 0.2s;
+
+  &:hover,
+  &:focus {
+    color: var(--color-primary-action);
+    text-decoration: none;
+  }
+
+  &:focus {
+    @include focus;
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul,
+ol {
+  list-style-position: inside;
+}
+
+dt {
+  font-weight: $font-bold;
+}
+
+code {
+  color: var(--color-text);
+  font-size: $text-sm;
+  font-weight: $font-bold;
+}
+
+table {
+  width: 100%;
+}
+
+th,
+td {
+  padding: $space-2 $space-3;
+  border-width: 1px;
+  vertical-align: top;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  accent-color: var(--color-primary);
 }
