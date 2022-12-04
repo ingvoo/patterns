@@ -4,11 +4,11 @@
 
 :root {
   --button-padding: #{$space-3} #{$space-4};
-  --button-text-size: #{$font-base};
+  --button-text-size: #{$text-base};
   --button-text: #{$color-white};
   --button-text-action: #{$color-white};
-  --button-bg: var(--color-primary);
-  --button-bg-action: var(--color-primary-action);
+  --button-bg: #{$color-primary};
+  --button-bg-action: #{$color-primary-action};
 }
 
 .button,
@@ -50,8 +50,8 @@
   }
 
   &.button--secondary {
-    --button-bg: var(--color-secondary);
-    --button-bg-action: var(--color-secondary-action);
+    --button-bg: #{$color-secondary};
+    --button-bg-action: #{color-secondary-action};
   }
 
   &.button--small {

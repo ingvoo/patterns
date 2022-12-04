@@ -1,8 +1,12 @@
 <div class="master">
   <div class="master__content">
-    {% render '@site-header' %}
-    <main>{% block main %}{% endblock main %}</main>
+    {% render '@header' %}
+    <main>
+      {% block main %}{% endblock main %}
+    </main>
   </div>
   <div class="master__footer">
-    {% render '@site-footer', { class: 'mt-8', text: 'Footer' } %}</div>
+    <div class="mt-8">
+      {% render '@footer' %}</div>
+    </div>
 </div>

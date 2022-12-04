@@ -1,14 +1,14 @@
 /* ----------------------------------------*\
-  SITE HEADER
+  HEADER
 \*---------------------------------------- */
 
-.site-header {
+.header {
   padding-top: $space-6;
   padding-bottom: $space-6;
   color: $color-white;
-  background-color: var(--color-primary);
+  background-color: $color-primary;
 }
 
-.site-header__title {
+.header__title {
   @include text-h4;
 }

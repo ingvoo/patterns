@@ -12,14 +12,13 @@
  */
 @import '10-settings/functions';
 @import '10-settings/settings';
-@import '10-settings/mapping';
 @import '20-tools/mixins';
 
 /**
  * Reset and base
  */
 @import '30-generic/reset';
-@import '40-elements/base';
+@import '40-base/base';
 
 /**
  * Objects
@@ -30,23 +29,23 @@
 @import '50-objects/master';
 
 /**
- * Components
+ * Elements
  */
-@import '60-components/button';
-@import '60-components/button-reset';
-@import '60-components/form-input';
-@import '60-components/form-control';
-@import '60-components/icon';
-@import '60-components/list';
-@import '60-components/list-inline';
-@import '60-components/list-description';
-@import '60-components/text-label';
+@import '60-elements/button';
+@import '60-elements/button-reset';
+@import '60-elements/form-input';
+@import '60-elements/form-control';
+@import '60-elements/icon';
+@import '60-elements/list';
+@import '60-elements/list-inline';
+@import '60-elements/list-description';
+@import '60-elements/text-label';
 
 /**
- * Patterns
+ * Blocks
  */
-@import '70-patterns/site-footer';
-@import '70-patterns/site-header';
+@import '70-blocks/footer';
+@import '70-blocks/header';
 
 /**
  * Utilities
