@@ -1,17 +1,6 @@
 /* ----------------------------------------*\
-  FLEX
+  Flex
 \*---------------------------------------- */
-
-/**
-* Flex directions
-*/
-.flex-col {
-  flex-direction: column;
-}
-
-.flex-row {
-  flex-direction: row;
-}
 
 .flex-initial {
   flex: 0 1 auto;
@@ -31,14 +20,6 @@
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
   @include screen($breakpoint-name) {
-    .#{$breakpoint-name}\:flex-col {
-      flex-direction: column;
-    }
-
-    .#{$breakpoint-name}\:flex-row {
-      flex-direction: row;
-    }
-
     .#{$breakpoint-name}\:flex-initial {
       flex: 0 1 auto;
     }

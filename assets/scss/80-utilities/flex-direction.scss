@@ -1,0 +1,26 @@
+/* ----------------------------------------*\
+  Flex direction
+\*---------------------------------------- */
+
+$flex-directions: (
+  col: column,
+  col-reverse: column-reverse,
+  row: row,
+  row-reverse: row-reverse
+);
+
+@each $f-name, $f-value in $flex-directions {
+  .flex-#{$f-name} {
+    flex-direction: $f-value;
+  }
+}
+
+@each $b-name, $b-value in $breakpoints {
+  @include screen($b-name) {
+    @each $f-name, $f-value in $flex-directions {
+      .#{$b-name}\:flex-#{$f-name} {
+        flex-direction: $f-value;
+      }
+    }
+  }
+}
