@@ -1,7 +1,7 @@
 
 /**
  * Do not edit directly
- * Generated on Tue, 18 Oct 2022 08:38:18 GMT
+ * Generated on Sun, 04 Dec 2022 06:46:51 GMT
  */
 
 $text-8xl: 3.75rem !default; // 60px
@@ -57,39 +57,21 @@ $duration-500: 500ms !default;
 $duration-350: 350ms !default;
 $duration-250: 250ms !default;
 $duration-150: 150ms !default;
-$color-orange-800: hsl(25, 100%, 40%) !default;
-$color-orange-500: hsl(25, 100%, 50%) !default;
-$color-white: hsl(0, 0%, 100%) !default;
-$color-blue-800: hsl(207, 100%, 40%) !default;
-$color-blue-500: hsl(207, 100%, 50%) !default;
-$color-gray-900: hsl(0, 0%, 13%) !default;
-$color-gray-800: hsl(0, 0%, 26%) !default;
-$color-gray-700: hsl(0, 0%, 38%) !default;
-$color-gray-600: hsl(0, 0%, 46%) !default;
-$color-gray-500: hsl(0, 0%, 62%) !default;
-$color-gray-400: hsl(0, 0%, 74%) !default;
-$color-gray-300: hsl(0, 0%, 88%) !default;
-$color-gray-200: hsl(0, 0%, 93%) !default;
-$color-gray-100: hsl(0, 0%, 96%) !default;
+$color-gray-500: #868686 !default;
+$color-gray-300: #a3a3a3 !default;
+$color-gray-100: #fafafa !default;
+$color-orange-500: #F7A823 !default;
+$color-white: #fff !default;
 $color-black: hsl(0, 0%, 0%) !default;
 
 $tokens: (
   'colors': (
     'color-black': $color-black,
-    'color-gray-100': $color-gray-100,
-    'color-gray-200': $color-gray-200,
-    'color-gray-300': $color-gray-300,
-    'color-gray-400': $color-gray-400,
-    'color-gray-500': $color-gray-500,
-    'color-gray-600': $color-gray-600,
-    'color-gray-700': $color-gray-700,
-    'color-gray-800': $color-gray-800,
-    'color-gray-900': $color-gray-900,
-    'color-blue-500': $color-blue-500,
-    'color-blue-800': $color-blue-800,
     'color-white': $color-white,
     'color-orange-500': $color-orange-500,
-    'color-orange-800': $color-orange-800
+    'color-gray-100': $color-gray-100,
+    'color-gray-300': $color-gray-300,
+    'color-gray-500': $color-gray-500
   ),
   'durations': (
     'duration-150': $duration-150,

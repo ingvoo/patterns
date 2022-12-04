@@ -2,6 +2,11 @@
   CONTAINER
 \*---------------------------------------- */
 
+:root {
+  --container-gap: #{$space-4};
+  --container-width: 1480px;
+}
+
 .container {
   max-width: var(--container-width);
   padding-inline: var(--container-gap);
