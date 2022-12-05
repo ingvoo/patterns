@@ -1,47 +1,27 @@
 /* ----------------------------------------*\
-  ALIGN ITEMS
+  Align Item
 \*---------------------------------------- */
 
-.items-stretch {
-  align-items: stretch;
-}
+$items: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  stretch: stretch,
+  baseline: baseline,
+);
 
-.items-start {
-  align-items: flex-start;
-}
-
-.items-center {
-  align-items: center;
-}
-
-.items-end {
-  align-items: flex-end;
-}
-
-.items-baseline {
-  align-items: baseline;
+@each $items-name, $items-value in $items {
+  .items-#{$items-name} {
+    align-items: $items-value;
+  }
 }
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
   @include screen($breakpoint-name) {
-    .#{$breakpoint-name}\:items-stretch {
-      align-items: stretch;
-    }
-
-    .#{$breakpoint-name}\:items-start {
-      align-items: flex-start;
-    }
-
-    .#{$breakpoint-name}\:items-center {
-      align-items: center;
-    }
-
-    .#{$breakpoint-name}\:items-end {
-      align-items: flex-end;
-    }
-
-    .#{$breakpoint-name}\:items-baseline {
-      align-items: baseline;
+    @each $items-name, $items-value in $items {
+      .#{$breakpoint-name}\:items-#{$items-name} {
+        align-items: $items-value;
+      }
     }
   }
 }
