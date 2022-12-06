@@ -1,7 +1,7 @@
 
 /**
  * Do not edit directly
- * Generated on Sun, 04 Dec 2022 06:46:51 GMT
+ * Generated on Tue, 06 Dec 2022 12:19:17 GMT
  */
 
 $text-8xl: 3.75rem !default; // 60px
@@ -63,8 +63,18 @@ $color-gray-100: #fafafa !default;
 $color-orange-500: #F7A823 !default;
 $color-white: #fff !default;
 $color-black: hsl(0, 0%, 0%) !default;
+$xl: 1280px !default;
+$lg: 1024px !default;
+$md: 768px !default;
+$sm: 640px !default;
 
 $tokens: (
+  'breakpoints': (
+    'sm': $sm,
+    'md': $md,
+    'lg': $lg,
+    'xl': $xl
+  ),
   'colors': (
     'color-black': $color-black,
     'color-white': $color-white,
