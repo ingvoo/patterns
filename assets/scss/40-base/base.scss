@@ -6,7 +6,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  border: 0 solid var(--color-border);
+  border: 0 solid $color-border;
 }
 
 html,
@@ -16,10 +16,10 @@ body {
 
 html {
   font-family: $font-family;
-  font-size: $font-base;
+  font-size: $text-base;
   font-weight: $font-regular;
   line-height: $leading-normal;
-  color: var(--color-text);
+  color: $color-text;
   background-color: $color-white;
 
   scroll-behavior: smooth;
@@ -90,7 +90,7 @@ legend {
 }
 
 dfn {
-  color: var(--color-primary);
+  color: $color-primary;
   font-style: normal;
 }
 
@@ -99,12 +99,12 @@ p + p {
 }
 
 a {
-  color: var(--color-primary);
-  transition: color 0.2s;
+  color: $color-primary;
+  transition: color $duration-250, background-color $duration-250, border-color $duration-250;
 
   &:hover,
   &:focus {
-    color: var(--color-primary-action);
+    color: $color-primary-action;
     text-decoration: none;
   }
 
@@ -128,7 +128,7 @@ dt {
 }
 
 code {
-  color: var(--color-text);
+  color: $color-text;
   font-size: $text-sm;
   font-weight: $font-bold;
 }
@@ -146,5 +146,5 @@ td {
 
 input[type='checkbox'],
 input[type='radio'] {
-  accent-color: var(--color-primary);
+  accent-color: $color-primary;
 }

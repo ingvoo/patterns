@@ -2,62 +2,28 @@
   DISPLAY
 \*---------------------------------------- */
 
-.block {
-  display: block;
+$displays: (
+  block: block,
+  hidden: none,
+  flex: flex,
+  grid: grid,
+  inline: inline,
+  inline-flex: inline-flex,
+  inline-block: inline-block
+);
+
+@each $d-name, $d-value in $displays {
+  .#{$d-name} {
+    display: $d-value;
+  }
 }
 
-.hidden {
-  display: none;
-}
-
-.flex {
-  display: flex;
-}
-
-.grid {
-  display: grid;
-}
-
-.inline {
-  display: inline;
-}
-
-.inline-flex {
-  display: inline-flex;
-}
-
-.inline-block {
-  display: inline-block;
-}
-
-@each $breakpoint-name, $breakpoint-value in $breakpoints {
-  @include screen($breakpoint-name) {
-    .#{$breakpoint-name}\:hidden {
-      display: none;
-    }
-
-    .#{$breakpoint-name}\:block {
-      display: block;
-    }
-
-    .#{$breakpoint-name}\:flex {
-      display: flex;
-    }
-
-    .#{$breakpoint-name}\:grid {
-      display: grid;
-    }
-
-    .#{$breakpoint-name}\:inline {
-      display: inline;
-    }
-
-    .#{$breakpoint-name}\:inline-flex {
-      display: inline-flex;
-    }
-
-    .#{$breakpoint-name}\:inline-block {
-      display: inline-block;
+@each $b-name, $b-value in $breakpoints {
+  @include screen($b-name) {
+    @each $d-name, $d-value in $displays {
+      .#{$b-name}\:#{$d-name} {
+        display: $d-value;
+      }
     }
   }
 }

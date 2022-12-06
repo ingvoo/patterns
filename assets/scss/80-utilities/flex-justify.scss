@@ -1,47 +1,27 @@
 /* ----------------------------------------*\
-  JUSTIFY CONTENT
+  Justify content
 \*---------------------------------------- */
 
-.justify-start {
-  justify-content: flex-start;
+$flex-justify: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  between: space-between,
+  around: space-around
+);
+
+@each $j-name, $j-value in $flex-justify {
+  .justify-#{$j-name} {
+    justify-content: $j-value;
+  }
 }
 
-.justify-center {
-  justify-content: center;
-}
-
-.justify-end {
-  justify-content: flex-end;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-
-.justify-around {
-  justify-content: space-around;
-}
-
-@each $breakpoint-name, $breakpoint-value in $breakpoints {
-  @include screen($breakpoint-name) {
-    .#{$breakpoint-name}\:justify-start {
-      justify-content: flex-start;
-    }
-
-    .#{$breakpoint-name}\:justify-center {
-      justify-content: center;
-    }
-
-    .#{$breakpoint-name}\:justify-end {
-      justify-content: flex-end;
-    }
-
-    .#{$breakpoint-name}\:justify-between {
-      justify-content: space-between;
-    }
-
-    .#{$breakpoint-name}\:justify-around {
-      justify-content: space-around;
+@each $b-name, $b-value in $breakpoints {
+  @include screen($b-name) {
+    @each $j-name, $j-value in $flex-justify {
+      .#{$b-name}\:justify-#{$j-name} {
+        justify-content: $j-value;
+      }
     }
   }
 }

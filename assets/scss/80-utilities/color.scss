@@ -11,11 +11,11 @@
 }
 
 .text-primary {
-  color: var(--color-primary);
+  color: $color-primary;
 }
 
 .text-secondary {
-  color: var(--color-secondary);
+  color: $color-secondary;
 }
 
 /**
@@ -30,11 +30,11 @@
 }
 
 .bg-primary {
-  background-color: var(--color-primary);
+  background-color: $color-primary;
 }
 
 .bg-secondary {
-  background-color: var(--color-secondary);
+  background-color: $color-secondary;
 }
 
 /**
@@ -49,9 +49,9 @@
 }
 
 .border-primary {
-  border-color: var(--color-primary);
+  border-color: $color-primary;
 }
 
 .border-secondary {
-  border-color: var(--color-secondary);
+  border-color: $color-secondary;
 }

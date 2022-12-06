@@ -1,3 +1,12 @@
+# [0.10.0](https://github.com/ingvoo/patterns/compare/0.9.0...0.10.0) (2022-12-06)
+
+
+### Features
+
+* make breakpoints available via json tokens ([4b619cd](https://github.com/ingvoo/patterns/commit/4b619cd9561e3090a4817ecb6a5382ba20242ad5)), closes [#68](https://github.com/ingvoo/patterns/issues/68)
+* set sass vars in favor of custom properties ([775e06a](https://github.com/ingvoo/patterns/commit/775e06ab615b0f1da1988da7d4b6d7d3e0f34780))
+* setup missing flex directions properties ([13b46ac](https://github.com/ingvoo/patterns/commit/13b46ac51f54d004c38fff8aae9365689da7453e))
+
 # [0.9.0](https://github.com/ingvijonasson/patterns/compare/0.8.0...0.9.0) (2022-10-18)
 
 
