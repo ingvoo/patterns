@@ -41,6 +41,7 @@
     "concurrently": "^5.2.0",
     "css-loader": "^3.5.3",
     "cssnano": "^4.1.10",
+    "cypress": "^12.0.2",
     "eslint": "^7.12.0",
     "eslint-config-prettier": "^6.14.0",
     "eslint-config-rawbot": "^1.1.1",
